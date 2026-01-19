@@ -61,6 +61,12 @@ apt-get -y install audacity              # ubutnu 下的音频分析软件
 # 提交记录
 ## 2026-01-19
 ```shell
+commit 1b3fd3d5fa7fe9a0f6a5952ff018c827fa6eeaeb (HEAD -> main, origin/main, origin/HEAD)
+Author: fjl <jl.f@signway.cn>
+Date:   Mon Jan 19 14:57:57 2026 +0800
+
+    docs:update dox
+
 commit 565c2dda9c9ef512fa79cb4a5ad388573668a7e2 (HEAD -> main, origin/main, origin/HEAD)
 Author: fjl <jl.f@signway.cn>
 Date:   Mon Jan 19 14:37:18 2026 +0800
