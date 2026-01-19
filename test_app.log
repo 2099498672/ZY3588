@@ -1,0 +1,3892 @@
+ 
+[2026-01-19 14:20:20] [INFO ] [TestApp] 固件版本: ZY3588_RK3588_ubuntu20.04_20260117.201958
+[2026-01-19 14:20:20] [INFO ] [BoardFactory] Creating BOARD_ZY3588 board instance
+[2026-01-19 14:20:20] [INFO ] [UART] 串口设备: /dev/ttyS0
+[2026-01-19 14:20:20] [INFO ] [FAN] Fan status set to: OFF
+[2026-01-19 14:20:20] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:20] [INFO ] [LED] GLED set to OFF
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] mmcDeviceSizePath: /sys/class/block/mmcblk0/size
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] tfCardDeviceSizePath: /sys/class/block/mmcblk1/size
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] rledPath: /sys/class/leds/led_red/brightness, rled_status: 0
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] gledPath: /sys/class/leds/led_green/brightness, gled_status: 0
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] hwidPath: /proc/device-tree/hw-board/hw-version
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] audioEventName: rockchip-es8389 Headset, audioCardName:plughw:rockchipes8389
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] fanCtrlPath: /sys/class/misc/fan-ctl/pwr_en, initialStatus: 0
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] wifi interface: wlan0, scanCount: 5
+[2026-01-19 14:20:20] [INFO ] [RkGenericBoard] rtcDevicePath: /dev/rtc0
+[2026-01-19 14:20:20] [INFO ] [ZY3588] ZY3588 with Fan initialized
+[2026-01-19 14:20:20] [INFO ] [ZY3588] mmcDeviceSizePath: /sys/class/block/mmcblk0/size
+[2026-01-19 14:20:20] [INFO ] [ZY3588] pcieDeviceSizePath: /sys/class/block/nvme0n1/size
+[2026-01-19 14:20:20] [INFO ] [ZY3588] tfCardDeviceSizePath: /sys/class/block/mmcblk1/size
+[2026-01-19 14:20:20] [INFO ] [ZY3588] rledPath: /sys/class/leds/led_red/brightness, rled_status: 0
+[2026-01-19 14:20:20] [INFO ] [ZY3588] gledPath: /sys/class/leds/led_green/brightness, gled_status: 0
+[2026-01-19 14:20:20] [INFO ] [ZY3588] hwidPath: /proc/device-tree/hw-board/hw-version
+[2026-01-19 14:20:20] [INFO ] [ZY3588] audioEventName: rockchip-es8389 Headset
+[2026-01-19 14:20:20] [INFO ] [ZY3588] fanCtrlPath: /sys/class/misc/fan-ctl/pwr_en
+[2026-01-19 14:20:20] [INFO ] [ZY3588] interface: wlan0, scanCount: 5
+[2026-01-19 14:20:20] [INFO ] [ZY3588] rtcDevicePath: /dev/rtc0
+[2026-01-19 14:20:20] [INFO ] [TestApp] 创建板卡实例: ZY3588
+[2026-01-19 14:20:20] [INFO ] [TestApp] 已注册 SIGINT 信号处理函数，等待退出信号...
+[2026-01-19 14:20:20] [INFO ] [TestApp] 任务处理线程启动
+[2026-01-19 14:20:20] [INFO ] [Audio] 检查设备: /dev/input/event6 -> rockchip-hdmi0 rockchip-hdmi0
+[2026-01-19 14:20:20] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:20] [INFO ] [Audio] 检查设备: /dev/input/event5 -> adc-keys
+[2026-01-19 14:20:20] [INFO ] [Audio] 检查设备: /dev/input/event4 -> bt-powerkey
+[2026-01-19 14:20:20] [INFO ] [Audio] 检查设备: /dev/input/event3 -> rockchip-es8389 Headset
+[2026-01-19 14:20:20] [INFO ] [Audio] 找到目标设备: /dev/input/event3 (rockchip-es8389 Headset)
+[2026-01-19 14:20:20] [INFO ] [Audio] 使用设备: /dev/input/event3
+[2026-01-19 14:20:20] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:21] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:22] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:23] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:24] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:25] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:25] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:20:25] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:26] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:27] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:28] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:29] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:30] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:30] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:20:30] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:31] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:32] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:33] [INFO ] [LED] RLED set to OFF
+[解析成功
+2026-01-19 14:20:33] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"test" : 1
+	},
+	"result" : false,
+	"subCommand" : 2
+}
+[2026-01-19 14:20:33] [INFO ] [ProtocolParser] cmdIndex : 26
+[2026-01-19 14:20:33] [INFO ] [TaskHandler] CMD_BEGIN_TEST : 0x02
+[2026-01-19 14:20:33] [INFO ] [TaskHandler] Stopping all ongoing test tasks...
+[2026-01-19 14:20:33] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 2
+}
+[2026-01-19 14:20:33] [INFO ] [ProtocolParser] response cmdIndex : 26, data length : 97
+[2026-01-19 14:20:34] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:20:34] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"isAutoTest" : true,
+			"priority" : "1",
+			"store" : 
+			[
+				{
+					"enable" : true,
+					"max" : 16.0,
+					"min" : 12.0,
+					"name" : "ddr"
+				},
+				{
+					"enable" : true,
+					"max" : 256.0,
+					"min" : 200.0,
+					"name" : "emmc"
+				},
+				{
+					"enable" : true,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb0"
+				},
+				{
+					"enable" : false,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb1"
+				},
+				{
+					"enable" : false,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb2"
+				},
+				{
+					"enable" : false,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb3"
+				},
+				{
+					"enable" : true,
+					"max" : 1000.0,
+					"min" : 4.0,
+					"name" : "usb_pcie"
+				},
+				{
+					"enable" : true,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb_tf"
+				},
+				{
+					"enable" : true,
+					"isPid" : "768",
+					"isVid" : "2",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb2(3.0)"
+				},
+				{
+					"enable" : true,
+					"isPid" : "512",
+					"isVid" : "2",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb2(2.0)"
+				},
+				{
+					"enable" : true,
+					"isPid" : "768",
+					"isVid" : "3",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb3(2.0)"
+				},
+				{
+					"enable" : true,
+					"isPid" : "512",
+					"isVid" : "3",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb3(2.0)"
+				}
+			],
+			"type" : "storage"
+		},
+		"testFuncCode" : 15,
+		"type" : "storage"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] cmdIndex : 27
+[2026-01-19 14:20:34] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] response cmdIndex : 27, data length : 97
+[2026-01-19 14:20:34] [INFO ] [TaskHandler] execute storage test
+[2026-01-19 14:20:34] [INFO ] [STORAGE] found 19 usb devices
+[2026-01-19 14:20:34] [INFO ] [STORAGE] udisk path: (0): /sys/bus/usb/devices/2-1.3/2-1.3:1.0/host1/target1:0:0/1:0:0:0/block/sdb/size
+[2026-01-19 14:20:34] [INFO ] [STORAGE] udisk size: (0): 28.87 GB
+[2026-01-19 14:20:34] [INFO ] [STORAGE] udisk path: (1): /sys/bus/usb/devices/2-1.1/2-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda/size
+[2026-01-19 14:20:34] [INFO ] [STORAGE] udisk size: (1): 28.64 GB
+[2026-01-19 14:20:34] [INFO ] [解析成功ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 1,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"type" : "camera"
+		},
+		"testFuncCode" : 16,
+		"type" : "camera"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] cmdIndex : 28
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 1: VID=0x0002, PID=0x0300
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 2: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 3: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 4: VID=0x0003, PID=0x0300
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 5: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 6: VID=0x0003, PID=0x0200
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 7: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 8: VID=0x0004, PID=0x0200
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 9: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 10: VID=0x0004, PID=0x0300
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 11: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 12: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 13: VID=0x0002, PID=0x0200
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 14: VID=0x0951, PID=0x1666
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 15: VID=0x0781, PID=0x5595
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 16: VID=0x1a40, PID=0x0101
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 17: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 18: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:20:34] [INFO ] [STORAGE] lsusb 设备 19: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:20:34] [INFO ] [STORAGE] ddr total size: 16333716 KB (15.58 GB)
+[2026-01-19 14:20:34] [INFO ] [STORAGE] emmc total size: 244629504 KB (233.30 GB)
+[[2026-01-19 14:20:34] [INFO ] [STORAGE] pcie total size: 1000204632 KB (953.87 GB)
+2026-01-19 14:20:34] [INFO ] [TF] emmc total size: 15603712 KB (14.88 GB)
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"isAutoTest" : true,
+			"priority" : "1",
+			"store" : 
+			[
+				{
+					"enable" : true,
+					"max" : 16.0,
+					"min" : 12.0,
+					"name" : "ddr",
+					"testResult" : "OK",
+					"testValue" : "15.58"
+				},
+				{
+					"enable" : true,
+					"max" : 256.0,
+					"min" : 200.0,
+					"name" : "emmc",
+					"testResult" : "OK",
+					"testValue" : "233.30"
+				},
+				{
+					"enable" : true,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb0",
+					"testResult" : "OK",
+					"testValue" : "28.87"
+				},
+				{
+					"enable" : false,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb1",
+					"testResult" : "OK",
+					"testValue" : "SKIP"
+				},
+				{
+					"enable" : false,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb2",
+					"testResult" : "OK",
+					"testValue" : "SKIP"
+				},
+				{
+					"enable" : false,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb3",
+					"testResult" : "OK",
+					"testValue" : "SKIP"
+				},
+				{
+					"enable" : true,
+					"max" : 1000.0,
+					"min" : 4.0,
+					"name" : "usb_pcie",
+					"testResult" : "OK",
+					"testValue" : "953.87"
+				},
+				{
+					"enable" : true,
+					"max" : 64.0,
+					"min" : 4.0,
+					"name" : "usb_tf",
+					"testResult" : "OK",
+					"testValue" : "14.88"
+				},
+				{
+					"enable" : true,
+					"isPid" : "768",
+					"isVid" : "2",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb2(3.0)",
+					"testResult" : "OK"
+				},
+				{
+					"enable" : true,
+					"isPid" : "512",
+					"isVid" : "2",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb2(2.0)",
+					"testResult" : "OK"
+				},
+				{
+					"enable" : true,
+					"isPid" : "768",
+					"isVid" : "3",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb3(2.0)",
+					"testResult" : "OK"
+				},
+				{
+					"enable" : true,
+					"isPid" : "512",
+					"isVid" : "3",
+					"max" : 0.0,
+					"min" : 0.0,
+					"name" : "facilityusb3(2.0)",
+					"testResult" : "OK"
+				}
+			],
+			"type" : "storage"
+		},
+		"testFuncCode" : 15,
+		"type" : "storage"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] send data length : 2145
+[2026-01-19 14:20:34] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] response cmdIndex : 28, data length : 97
+[2026-01-19 14:20:34] [INFO ] [TaskHandler] execute camera test
+[2026-01-19 14:20:34] [INFO ] [Camera] 开始从设备 /dev/video73 捕获PNG图像到 /root/cam1_test.png
+[2026-01-19 14:20:34] [INFO ] [Camera] 设备驱动: rkisp_v6
+[2026-01-19 14:20:34] [INFO ] [Camera] 设备卡: rkisp_mainpath
+[2026-01-19 14:20:34] [INFO ] [Camera] 设备总线信息: platform:rkisp1-vir0
+[2026-01-19 14:20:34] [INFO ] [Camera] 设置格式成功: 1920x1080, 像素格式: 0x59565955
+[2026-01-19 14:20:34] [INFO ] [Camera] 分配了 1 个缓冲区
+[2026-01-19 14:20:34] [INFO ] [Camera] 缓冲区[0]: 长度=4177920, 偏移=0
+[2026-01-19 14:20:34] [INFO ] [Camera] 开始视频流捕获
+[解析成功
+2026-01-19 14:20:34] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:20:34] [INFO ] [ProtocolParser] cmdIndex : 24672
+[2026-01-19 14:20:34] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:20:35] [INFO ] [Camera] 捕获到帧, 大小: 4147200 字节
+[2026-01-19 14:20:35] [INFO ] [Camera] 执行转换命令: ffmpeg -y -f rawvideo -pixel_format uyvy422 -video_size 1920x1080 -i - -frames 1 /root/cam1_test.png
+解析成功
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"groupList" : 
+			[
+				{
+					"enable" : false,
+					"itemList" : 
+					[
+						{
+							"dataLength" : 5,
+							"enable" : true,
+							"mode" : "0",
+							"serialName" : "CAN0",
+							"serialPath" : "can0",
+							"type" : "can"
+						},
+						{
+							"dataLength" : 5,
+							"enable" : true,
+							"mode" : "0",
+							"serialName" : "CAN1",
+							"serialPath" : "can1",
+							"type" : "can"
+						},
+						{
+							"dataLength" : 5,
+							"enable" : true,
+							"mode" : "2",
+							"serialName" : "CAN2",
+							"serialPath" : "can2",
+							"type" : "can"
+						}
+					]
+				}
+			],
+			"isAutoTest" : true,
+			"priority" : "1",
+			"type" : "serial"
+		},
+		"testFuncCode" : 17,
+		"type" : "serial"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] cmdIndex : 29
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] response cmdIndex : 29, data length : 97
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] execute serial test
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] collect can can0 mode 0
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] collect can can1 mode 0
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] recv can can2 mode 2
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] can2 fd : 9
+[2026-01-19 14:20:35] [INFO ] [SERIAL] CAN test sent fd = 9: 01 02 03 04 05 06 07 08
+[2026-01-19 14:20:35] [ERROR] [SERIAL] deviceList size < 2
+测试结果置位：发送全部成功，接收全部成功
+Device can0: Send Result = Success, Recv Result = Success
+Device can1: Send Result = Success, Recv Result = Success
+[2026-01-19 14:20:35] [INFO ] [SERIAL] CAN test received fd = 9: data len=6
+[2026-01-19 14:20:35] [INFO ] [SERIAL] CAN test received fd = 9: 02 02 03 04 05 06 00 00
+[2026-01-19 14:20:35] [INFO ] [SERIAL] CAN test OK
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] can device can2 test success
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] open CAN device can0 success, sockfd = 9
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] open CAN device can1 success, sockfd = 11
+[2026-01-19 14:20:35] [INFO ] [SERIAL] CAN Device can0 sending frame to Device can1
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"isAutoTest" : true,
+			"priority" : "2",
+			"type" : "wifi",
+			"wifiSsidList" : 
+			[
+				{
+					"enable" : true,
+					"password" : "signway123@",
+					"signalMax" : 5,
+					"signalMin" : 2,
+					"ssid" : "SIGNWAY-SC"
+				}
+			]
+		},
+		"testFuncCode" : 18,
+		"type" : "wifi"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] cmdIndex : 30
+解析成功
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[[2026-01-19 14:20:35] [INFO ] [WIFI] Scanning for SSID: SIGNWAY-SC
+2026-01-19 14:20:35] [INFO ] [ProtocolParser] response cmdIndex : 30, data length : 97
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] execute wifi test
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 829440 kb/s
+    Stream #0:0: Video: rawvideo (UYVY / 0x59565955), uyvy422, 1920x1080, 829440 kb/s, 25 tbr, 25 tbn, 25 tbc
+[2026-01-19 14:20:35] [DEBUG] [WIFI] scan res : OK
+
+[2026-01-19 14:20:35] [INFO ] [WIFI] Scan command executed successfully
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> png (native))
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [WIFI] bssid / frequency / signal level / flags / ssid
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f4:84:8d:e3:ab:91	5805	-66	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	signway_xmb4_5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:90:82	5745	-70	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:90:80	5745	-70	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f8:00:a1:e0:6d:4c	5180	-71	[WPA2-PSK-CCMP][WPS][ESS]	SIGNWAY-TEST-5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 4c:d0:dd:05:d2:18	5180	-77	[WPA2-PSK-CCMP][WPS][ESS]	ChinaNet-8aCS-5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 38:88:1e:01:52:84	5745	-88	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]	ChinaNet-PXLL-5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 60:0b:03:b8:c8:40	5825	-85	[WPA2-PSK-CCMP][ESS]	SIGNWAY-JF
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:4e:40	5260	-78	[WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-XTSJ
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] ba:56:00:36:6e:e3	5180	-76	[WPA2-PSK+SAE-GCMP-256+CCMP][ESS]	
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f8:00:a1:e0:6d:48	2412	-59	[WPA2-PSK-CCMP][WPS][ESS]	SIGNWAY-TEST
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f0:b4:29:e7:40:dc	5785	-75	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]	PT_5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] fa:84:8d:e3:ab:91	5805	-66	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] b8:56:00:36:6e:dc	5180	-75	[WPA2-PSK-CCMP][WPS][ESS]	SIGNWAY-TEST-5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 50:42:89:ba:89:cc	5220	-80	[WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS]	GS-5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:90:92	2412	-59	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:90:90	2412	-59	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:90:91	2412	-60	[ESS]	\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 4c:d0:dd:05:d2:14	2412	-71	[WPA2-PSK-CCMP][WPS][ESS]	ChinaNet-8aCS
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] e6:61:61:5c:f1:6a	2462	-64	[WPA2-PSK-CCMP][ESS]	DAV
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f8:00:a1:e0:6d:4f	5180	-71	[WPA2-PSK+SAE-CCMP][ESS]	
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f4:84:8d:e3:ab:8f	2462	-56	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	signway_xmb4_2.4G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] fe:84:8d:e3:ab:8f	2462	-52	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 50:42:89:ba:89:cb	2422	-63	[WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS]	GS
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 90:3f:ea:9e:21:a1	2437	-65	[WPA2-PSK-CCMP][ESS]	\x00
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 38:88:1e:01:52:80	2437	-53	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]	ChinaNet-PXLL
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:4e:50	2462	-58	[WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-XTSJ
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f0:b4:29:e7:40:db	2462	-54	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]	PT
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 60:0b:03:b8:c8:50	2437	-60	[WPA2-PSK-CCMP][ESS]	SIGNWAY-JF
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] f2:b4:29:e5:40:db	2462	-56	[WPS][ESS]	  \xe5\xb0\x8f\xe7\xb1\xb3\xe5\x85\xb1\xe4\xba\xabWiFi_40DA
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:4e:51	2462	-60	[ESS]	\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 50:eb:f6:09:d2:08	2452	-59	[WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS]	xmb_2.4G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] b8:56:00:36:6e:d8	2437	-60	[WPA2-PSK-CCMP][WPS][ESS]	SIGNWAY-TEST
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 50:eb:f6:09:d2:0c	5300	-81	[WPA2-PSK-CCMP][WPS][ESS]	xmb_5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] c4:b2:5b:e4:d6:94	2472	-76	[WPA2-PSK-CCMP][ESS]	WY
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 90:3f:ea:9e:21:a0	2437	-64	[WEP][ESS]	huawei01-2.4G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 24:5a:5f:5d:5b:23	2412	-68	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	NJGRAT
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] b0:a4:f0:eb:21:68	2447	-53	[WPA2-PSK-CCMP][WPS][ESS]	ChinaNet-8aCS
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 54:75:95:7f:33:7f	2412	-73	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	TP-LINK_337F
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] aa:00:74:c6:6a:da	2412	-69	[WPA-PSK-CCMP+TKIP][ESS]	iTV-y5gi
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 7e:4d:8f:79:4d:57	2412	-72	[WPA2-PSK-CCMP][ESS][P2P]	DIRECT-57-HP Laser 1188nw
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 90:3f:ea:9e:21:b1	5500	-86	[WPA2-PSK-CCMP][ESS]	\x00
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] aa:39:26:b6:2e:cd	5180	-89	[WPA2-PSK-CCMP][WPS][ESS][P2P]	DIRECT-L3ZP-00000230msTX
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:90:81	5745	-70	[ESS]	\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 14:51:7e:1b:4e:41	5260	-78	[ESS]	\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 9a:00:74:c6:6a:da	2412	-69	[WPA-PSK-CCMP+TKIP][ESS]	ChinaNet-y5gi
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 8a:e0:56:6c:8d:90	2432	-69	[WPA2-PSK-CCMP][WPS][ESS]	CU_2Ecq
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 54:75:95:7f:33:81	5785	-89	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	TP-LINK_337F
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 90:3f:ea:9e:21:b0	5500	-84	[WEP][ESS]	huawei02-5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] b0:a4:f0:eb:21:6c	5180	-79	[WPA2-PSK-CCMP][WPS][ESS]	ChinaNet-8aCS-5G
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] da:9c:67:87:86:e0	2437	-64	[WPA2-PSK-CCMP][WPS][ESS][P2P]	DIRECT-e0-HP M427 LaserJet
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 4a:9e:bd:08:be:5a	2462	-70	[WPA2-PSK-CCMP][WPS][ESS][P2P]	DIRECT-5a-HP 1005 Laser NS
+
+[2026-01-19 14:20:35] [DEBUG] [WIFI] 8a:e0:56:6c:8d:94	5180	-91	[WPA2-PSK-CCMP][WPS][ESS]	CU_406_5G
+
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can1: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [INFO ] [SERIAL] CAN Device can1 sending frame to Device can0
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+Output #0, image2, to '/root/cam1_test.png':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: png, rgb24, 1920x1080, q=2-31, 200 kb/s, 25 fps, 25 tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 png
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"data" : "",
+			"enable" : true,
+			"isAutoTest" : true,
+			"rssi" : 
+			{
+				"enable" : true,
+				"max" : 0,
+				"min" : -90
+			},
+			"type" : "bluetooth"
+		},
+		"testFuncCode" : 19,
+		"type" : "bluetooth"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] cmdIndex : 31
+解析成功
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] read from can0: id=0x123, data=TESTDATA
+Device can0: Send Result = Success, Recv Result = Success
+Device can1: Send Result = Success, Recv Result = Success
+[2026-01-19 14:20:35] [DEBUG] [SERIAL] serial CAN test success on attempt 1
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] CAN device: can0, send: success, recv: success
+[2026-01-19 14:20:35] [INFO ] [TaskHandler] CAN device: can1, send: success, recv: success
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"groupList" : 
+			[
+				{
+					"enable" : false,
+					"itemList" : 
+					[
+						{
+							"dataLength" : 5,
+							"enable" : true,
+							"mode" : "0",
+							"serialName" : "CAN0",
+							"serialPath" : "can0",
+							"testResult" : "OK",
+							"type" : "can"
+						},
+						{
+							"dataLength" : 5,
+							"enable" : true,
+							"mode" : "0",
+							"serialName" : "CAN1",
+							"serialPath" : "can1",
+							"testResult" : "OK",
+							"type" : "can"
+						},
+						{
+							"dataLength" : 5,
+							"enable" : true,
+							"mode" : "2",
+							"serialName" : "CAN2",
+							"serialPath" : "can2",
+							"testResult" : "OK",
+							"type" : "can"
+						}
+					]
+				}
+			],
+			"isAutoTest" : true,
+			"priority" : "1",
+			"type" : "serial"
+		},
+		"testFuncCode" : 17,
+		"type" : "serial"
+	},
+	"subCommand" : 7
+}
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] send data length : 905
+[2026-01-19 14:20:35] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:35] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:20:35] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[解析成功
+2026-01-19 14:20:35] [INFO ] [ProtocolParser] cmdIndex : 24673
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.108x    
+video:919kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[2026-01-19 14:20:35] [INFO ] [Camera] 帧已保存到 /root/cam1_test.png
+[2026-01-19 14:20:35] [INFO ] [Camera] 停止视频流捕获
+[2026-01-19 14:20:35] [INFO ] [Camera] 释放所有缓冲区
+[2026-01-19 14:20:35] [INFO ] [Camera] 成功捕获PNG图像到: /root/cam1_test.png
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 1,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"testResult" : "OK",
+			"testValue" : "0",
+			"type" : "camera"
+		},
+		"testFuncCode" : 16,
+		"testResult" : "OK",
+		"type" : "camera"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] send data length : 376
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:20:35] [INFO ] [ProtocolParser] cmdIndex : 24674
+解析成功
+[2026-01-19 14:20:36] [DEBUG] [WIFI] scan res : FAIL-BUSY
+
+[2026-01-19 14:20:36] [ERROR] [WIFI] Scan command failed
+[2026-01-19 14:20:36] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:37] [DEBUG] [WIFI] scan res : FAIL-BUSY
+
+[2026-01-19 14:20:37] [ERROR] [WIFI] Scan command failed
+[2026-01-19 14:20:37] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:38] [DEBUG] [WIFI] scan res : FAIL-BUSY
+
+[2026-01-19 14:20:38] [ERROR] [WIFI] Scan command failed
+[2026-01-19 14:20:38] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 2,
+		"testFuncCode" : 11,
+		"testOrder" : 
+		{
+			"ctei" : "",
+			"cteiWriteType" : 0,
+			"ln" : "31356817SF24031500381",
+			"lnWriteType" : 1,
+			"mac" : "",
+			"macWriteType" : 0,
+			"order" : 2,
+			"sn" : "",
+			"snWriteType" : 0
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:38] [INFO ] [ProtocolParser] cmdIndex : 33
+解析成功
+[2026-01-19 14:20:38] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:20:38] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"data" : "",
+			"enable" : true,
+			"isAutoTest" : true,
+			"rssi" : 
+			{
+				"enable" : true,
+				"max" : 0,
+				"min" : -90
+			},
+			"type" : "bluetooth"
+		},
+		"testFuncCode" : 19,
+		"type" : "bluetooth"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:38] [INFO ] [ProtocolParser] cmdIndex : 31
+[2026-01-19 14:20:39] [DEBUG] [WIFI] scan res : OK
+
+[2026-01-19 14:20:39] [INFO ] [WIFI] Scan command executed successfully
+[2026-01-19 14:20:39] [DEBUG] [WIFI] bssid / frequency / signal level / flags / ssid
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] f4:84:8d:e3:ab:91	5805	-66	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	signway_xmb4_5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:90:82	5745	-70	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:90:80	5745	-69	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] f8:00:a1:e0:6d:4c	5180	-74	[WPA2-PSK-CCMP][WPS][ESS]	SIGNWAY-TEST-5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 60:0b:03:b8:c8:40	5825	-83	[WPA2-PSK-CCMP][ESS]	SIGNWAY-JF
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:4e:40	5260	-77	[WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-XTSJ
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] ba:56:00:36:6e:e3	5180	-77	[WPA2-PSK+SAE-GCMP-256+CCMP][ESS]	
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] f8:00:a1:e0:6d:48	2412	-55	[WPA2-PSK-CCMP][WPS][ESS]	SIGNWAY-TEST
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] f0:b4:29:e7:40:dc	5785	-79	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]	PT_5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] fa:84:8d:e3:ab:91	5805	-66	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 50:42:89:ba:89:cc	5220	-80	[WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS]	GS-5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:90:92	2412	-58	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:90:90	2412	-60	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-CD
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:90:91	2412	-60	[ESS]	\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] e6:61:61:5c:f1:6a	2462	-63	[WPA2-PSK-CCMP][ESS]	DAV
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] f4:84:8d:e3:ab:8f	2462	-52	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	signway_xmb4_2.4G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] fe:84:8d:e3:ab:8f	2462	-52	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 50:42:89:ba:89:cb	2422	-57	[WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS]	GS
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 38:88:1e:01:52:80	2437	-53	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]	ChinaNet-PXLL
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:4e:50	2462	-60	[WPA2-PSK-CCMP+TKIP][ESS]	SIGNWAY-XTSJ
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] f0:b4:29:e7:40:db	2462	-55	[WPA-PSK-CCMP+TKIP][WPA2-PSK-CCMP+TKIP][WPS][ESS]	PT
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] f2:b4:29:e5:40:db	2462	-58	[WPS][ESS]	  \xe5\xb0\x8f\xe7\xb1\xb3\xe5\x85\xb1\xe4\xba\xabWiFi_40DA
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 50:eb:f6:09:d2:08	2452	-57	[WPA-PSK-CCMP][WPA2-PSK-CCMP][WPS][ESS]	xmb_2.4G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 50:eb:f6:09:d2:0c	5300	-82	[WPA2-PSK-CCMP][WPS][ESS]	xmb_5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] b0:a4:f0:eb:21:68	2447	-69	[WPA2-PSK-CCMP][WPS][ESS]	ChinaNet-8aCS
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] aa:00:74:c6:6a:da	2412	-69	[WPA-PSK-CCMP+TKIP][ESS]	iTV-y5gi
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 7e:4d:8f:79:4d:57	2412	-65	[WPA2-PSK-CCMP][ESS][P2P]	DIRECT-57-HP Laser 1188nw
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] aa:39:26:b6:2e:cd	5180	-89	[WPA2-PSK-CCMP][WPS][ESS][P2P]	DIRECT-L3ZP-00000230msTX
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:90:81	5745	-68	[ESS]	\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 14:51:7e:1b:4e:41	5260	-77	[ESS]	\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 54:75:95:7f:33:81	5785	-91	[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]	TP-LINK_337F
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 90:3f:ea:9e:21:b0	5500	-86	[WEP][ESS]	huawei02-5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] b0:a4:f0:eb:21:6c	5180	-81	[WPA2-PSK-CCMP][WPS][ESS]	ChinaNet-8aCS-5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] da:9c:67:87:86:e0	2437	-65	[WPA2-PSK-CCMP][WPS][ESS][P2P]	DIRECT-e0-HP M427 LaserJet
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 4a:9e:bd:08:be:5a	2462	-73	[WPA2-PSK-CCMP][WPS][ESS][P2P]	DIRECT-5a-HP 1005 Laser NS
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 8a:e0:56:6c:8d:94	5180	-90	[WPA2-PSK-CCMP][WPS][ESS]	CU_406_5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 90:3f:ea:9e:21:a1	2437	-66	[WPA2-PSK-CCMP][ESS]	\x00
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] b8:56:00:36:6e:dc	5180	-78	[WPA2-PSK-CCMP][WPS][ESS]	SIGNWAY-TEST-5G
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 9a:00:74:c6:6a:da	2412	-70	[WPA-PSK-CCMP+TKIP][ESS]	ChinaNet-y5gi
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 00:ad:d5:5f:5c:85	2437	-80	[WPA2-PSK-CCMP][WPS][ESS]	
+
+[2026-01-19 14:20:39] [DEBUG] [WIFI] 90:3f:ea:9e:21:a0	2437	-65	[WEP][ESS]	huawei01-2.4G
+
+[2026-01-19 14:20:39] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"isAutoTest" : true,
+			"priority" : "2",
+			"type" : "wifi",
+			"wifiSsidList" : 
+			[
+				{
+					"enable" : true,
+					"password" : "signway123@",
+					"signalMax" : 5,
+					"signalMin" : 2,
+					"ssid" : "SIGNWAY-SC",
+					"testResult" : "NG",
+					"testValue" : "NULL"
+				}
+			]
+		},
+		"testFuncCode" : 18,
+		"type" : "wifi"
+	},
+	"result" : "false",
+	"subCommand" : 7
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] send data length : 458
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response cmdIndex : 31, data length : 97
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] execute bluetooth test
+[2026-01-19 14:20:40] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:20:40] [WARN ] [TaskHandler] unknown command: 0x07
+CMD_SIGNAL_EXEC
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response cmdIndex : 33, data length : 98
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] execute LN test
+LN name to write and read: 31356817SF24031500381
+vendor write:
+51 45 52 56
+03 00 06 00
+00 a0 62 9c
+LAN MAC write successful: 
+vendor read:
+51 45 52 56
+03 00 06 00
+00 a0 62 9c
+LAN MAC read successful, data length: 6
+LAN MAC Data: 00A0629C7F00
+vendor write:
+51 45 52 56
+20 00 15 00
+33 31 33 35
+36 38 31 37
+53 46 32 34
+30 33 31 35
+30 30 33 38
+vendor read:
+51 45 52 56
+20 00 15 00
+33 31 33 35
+36 38 31 37
+53 46 32 34
+30 33 31 35
+30 30 33 38
+LN read successful, data length: 21
+LN Data: 31356817SF24031500381
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 2,
+		"testFuncCode" : 11,
+		"testOrder" : 
+		{
+			"ctei" : "",
+			"cteiWriteType" : 0,
+			"ln" : "31356817SF24031500381",
+			"lnWriteType" : 1,
+			"mac" : "",
+			"macWriteType" : 0,
+			"order" : 2,
+			"result" : "true",
+			"sn" : "",
+			"snWriteType" : 0
+		}
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] send data length : 356
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response cmdIndex : 31, data length : 97
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] execute bluetooth test
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] cmdIndex : 24675
+解析成功
+[2026-01-19 14:20:40] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:20:40] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] cmdIndex : 24676
+解析成功
+[2026-01-19 14:20:40] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:20:40] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:20:40] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"groupData" : 
+			{
+				"downloadPort" : 14702,
+				"ip" : "192.168.70.103",
+				"testCase" : 
+				{
+					"commId" : "3.1",
+					"enable" : true,
+					"ip" : "192.168.xx.xx",
+					"ip2" : "192.168.xx.xx",
+					"isAutoTest" : true,
+					"nic" : "eth0",
+					"nic2" : "eth1",
+					"nic3" : "eth2",
+					"priority" : "1",
+					"testMode" : "2",
+					"type" : "net"
+				},
+				"uploadPort" : 14701
+			},
+			"type" : "net"
+		},
+		"testFuncCode" : 20,
+		"type" : "net"
+	},
+	"result" : false,
+	"subCommand" : 15
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] cmdIndex : 32
+解析成功
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED_COMBINE : 0x0F
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 15
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] response cmdIndex : 32, data length : 98
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] execute net test
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] nic=eth0, ip=192.168.xx.xx
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] resultIp=192.168
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] nic=eth1, ip=192.168.xx.xx
+[2026-01-19 14:20:40] [INFO ] [TaskHandler] resultIp=192.168
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"commId" : "3.1",
+			"enable" : true,
+			"ip" : "192.168.xx.xx",
+			"ip2" : "192.168.xx.xx",
+			"isAutoTest" : true,
+			"nic" : "eth0",
+			"nic2" : "eth1",
+			"nic2TestValue" : "192.168.30.131",
+			"nic2testResult" : "OK",
+			"nic3" : "eth2",
+			"nicTestValue" : "192.168.31.107",
+			"nictestResult" : "OK",
+			"priority" : "1",
+			"testMode" : "2",
+			"testResult" : "OK",
+			"testValue" : "DHCP1:192.168.31.107|DHCP2:192.168.30.131|",
+			"type" : "net"
+		},
+		"testFuncCode" : 20,
+		"type" : "net"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] send data length : 607
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:20:40] [INFO ] [ProtocolParser] cmdIndex : 24677
+解析成功
+[2026-01-19 14:20:40] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:20:41] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 12,
+		"testOrder" : 
+		{
+			"artificialType" : "Green Led",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[解析成功
+2026-01-19 14:20:42] [INFO ] [ProtocolParser] cmdIndex : 34
+CMD_SIGNAL_EXEC
+[2026-01-19 14:20:42] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] response cmdIndex : 34, data length : 98
+[2026-01-19 14:20:42] [INFO ] [TaskHandler] execute MANUAL test
+[2026-01-19 14:20:42] [INFO ] [LED] GLED set to ON
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 12,
+		"testOrder" : 
+		{
+			"artificialType" : "Green Led",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] send data length : 217
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] cmdIndex : 24678
+解析成功
+[2026-01-19 14:20:42] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:20:42] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:20:42] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 13,
+		"testOrder" : 
+		{
+			"artificialType" : "Green Led",
+			"order" : 5,
+			"state" : false
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] cmdIndex : 35
+CMD_SIGNAL_EXEC
+[2026-01-19 14:20:42] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] response cmdIndex : 35, data length : 98
+[2026-01-19 14:20:42] [INFO ] [TaskHandler] execute MANUAL test
+[2026-01-19 14:20:42] [INFO ] [LED] GLED set to OFF
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 13,
+		"testOrder" : 
+		{
+			"artificialType" : "Green Led",
+			"order" : 5,
+			"state" : false
+		}
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] send data length : 218
+[解析成功
+2026-01-19 14:20:42] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:20:42] [INFO ] [ProtocolParser] cmdIndex : 24679
+[2026-01-19 14:20:42] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:20:43] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:44] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:20:44] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 14,
+		"testOrder" : 
+		{
+			"artificialType" : "Fan",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:44] [INFO ] [ProtocolParser] cmdIndex : 36
+CMD_SIGNAL_EXEC
+[2026-01-19 14:20:44] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:20:44] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:44] [INFO ] [ProtocolParser] response cmdIndex : 36, data length : 98
+[2026-01-19 14:20:44] [INFO ] [TaskHandler] execute MANUAL test
+[2026-01-19 14:20:44] [INFO ] [FAN] Fan status set to: ON
+[2026-01-19 14:20:44] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 14,
+		"testOrder" : 
+		{
+			"artificialType" : "Fan",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:20:44] [INFO ] [ProtocolParser] send data length : 211
+[解析成功
+2026-01-19 14:20:44] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:20:44] [INFO ] [ProtocolParser] cmdIndex : 24680
+[2026-01-19 14:20:44] [WARN ] [TaskHandler] unknown command: 0x0E
+[解析成功
+2026-01-19 14:20:45] [INFO ] [ProtocolParser] CMD_SIGNAL_EXECrecv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 15,
+		"testOrder" : 
+		{
+			"artificialType" : "Fan",
+			"order" : 5,
+			"state" : false
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+
+[2026-01-19 14:20:45] [INFO ] [ProtocolParser] cmdIndex : 37
+[2026-01-19 14:20:45] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:20:45] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:45] [INFO ] [ProtocolParser] response cmdIndex : 37, data length : 98
+[2026-01-19 14:20:45] [INFO ] [TaskHandler] execute MANUAL test
+[2026-01-19 14:20:45] [INFO ] [FAN] Fan status set to: OFF
+[2026-01-19 14:20:45] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 15,
+		"testOrder" : 
+		{
+			"artificialType" : "Fan",
+			"order" : 5,
+			"state" : false
+		}
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:20:45] [INFO ] [ProtocolParser] send data length : 212
+[解析成功
+2026-01-19 14:20:45] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:20:45] [INFO ] [ProtocolParser] cmdIndex : 24681
+[2026-01-19 14:20:45] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:20:45] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:45] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:20:45] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:46] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:20:47] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 16,
+		"testOrder" : 
+		{
+			"artificialType" : "Fan",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[CMD_SIGNAL_EXEC
+2026-01-19 14:20:47] [INFO ] [ProtocolParser] cmdIndex : 38
+[2026-01-19 14:20:47] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:20:47] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:47] [INFO ] [ProtocolParser] response cmdIndex : 38, data length : 98
+[2026-01-19 14:20:47] [INFO ] [TaskHandler] execute MANUAL test
+[2026-01-19 14:20:47] [INFO ] [FAN] Fan status set to: ON
+[2026-01-19 14:20:47] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 16,
+		"testOrder" : 
+		{
+			"artificialType" : "Fan",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:20:47] [INFO ] [ProtocolParser] send data length : 211
+[2026-01-19 14:20:47] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:47] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[解析成功
+2026-01-19 14:20:47] [INFO ] [ProtocolParser] cmdIndex : 24682
+[2026-01-19 14:20:47] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:20:48] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:20:49] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 17,
+		"testOrder" : 
+		{
+			"artificialType" : "Green Led",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+CMD_SIGNAL_EXEC
+[2026-01-19 14:20:49] [INFO ] [ProtocolParser] cmdIndex : 39
+[2026-01-19 14:20:49] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:20:49] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:20:49] [INFO ] [ProtocolParser] response cmdIndex : 39, data length : 98
+[2026-01-19 14:20:49] [INFO ] [TaskHandler] execute MANUAL test
+[2026-01-19 14:20:49] [INFO ] [LED] GLED set to ON
+[2026-01-19 14:20:49] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 5,
+		"testFuncCode" : 17,
+		"testOrder" : 
+		{
+			"artificialType" : "Green Led",
+			"order" : 5,
+			"state" : true
+		}
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:20:49] [INFO ] [ProtocolParser] send data length : 217
+[解析成功
+2026-01-19 14:20:49] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:20:49] [INFO ] [ProtocolParser] cmdIndex : 24683
+[2026-01-19 14:20:49] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:20:49] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:50] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:50] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:20:50] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:50] [WARN ] [BLUETOOTH] ACL connect to 94:17:00:40:51:59 failed: Input/output error
+[2026-01-19 14:20:50] [WARN ] [BLUETOOTH] ACL connect to 94:17:00:40:51:59 failed: Input/output error
+[2026-01-19 14:20:50] [WARN ] [BLUETOOTH] ACL connect to 94:8B:93:7B:6A:52 failed: Input/output error
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] Scan done, 2 devices found
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] Scan result: Total 2 Bluetooth devices
+[2026-01-19 14:20:50] [WARN ] [BLUETOOTH] ACL connect to 94:8B:93:7B:6A:52 failed: Input/output error
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] device 1: MAC Address: 94:17:00:40:51:59, Name: unknown, RSSI: -127 dBm
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] device 2: MAC Address: 94:8B:93:7B:6A:52, Name: unknown, RSSI: -127 dBm
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] Scan done, 2 devices found
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] Scan result: Total 2 Bluetooth devices
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] device 1: MAC Address: 94:17:00:40:51:59, Name: unknown, RSSI: -127 dBm
+[2026-01-19 14:20:50] [INFO ] [BLUETOOTH] device 2: MAC Address: 94:8B:93:7B:6A:52, Name: unknown, RSSI: -127 dBm
+[2026-01-19 14:20:50] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"data" : "",
+			"enable" : true,
+			"isAutoTest" : true,
+			"rssi" : 
+			{
+				"enable" : true,
+				"max" : 0,
+				"min" : -90,
+				"testResult" : "OK",
+				"testValue" : "bluetoothMAC = 94:17:00:40:51:59;bluetoothSize = 2"
+			},
+			"testResult" : "OK",
+			"testValue" : "bluetoothMAC = 94:17:00:40:51:59;bluetoothSize = 2",
+			"type" : "bluetooth"
+		},
+		"testFuncCode" : 19,
+		"testResult" : "OK",
+		"type" : "bluetooth"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:20:50] [INFO ] [ProtocolParser] send data length : 530
+[2026-01-19 14:20:50] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"data" : "",
+			"enable" : true,
+			"isAutoTest" : true,
+			"rssi" : 
+			{
+				"enable" : true,
+				"max" : 0,
+				"min" : -90,
+				"testResult" : "OK",
+				"testValue" : "bluetoothMAC = 94:17:00:40:51:59;bluetoothSize = 2"
+			},
+			"testResult" : "OK",
+			"testValue" : "bluetoothMAC = 94:17:00:40:51:59;bluetoothSize = 2",
+			"type" : "bluetooth"
+		},
+		"testFuncCode" : 19,
+		"testResult" : "OK",
+		"type" : "bluetooth"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:20:50] [INFO ] [ProtocolParser] send data length : 530
+[解析成功
+2026-01-19 14:20:50] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:20:50] [INFO ] [ProtocolParser] cmdIndex : 24684
+[2026-01-19 14:20:50] [WARN ] [TaskHandler] unknown command: 0x07
+[解析成功
+2026-01-19 14:20:50] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:20:50] [INFO ] [ProtocolParser] cmdIndex : 24685
+[2026-01-19 14:20:50] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:20:51] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:52] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:53] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:54] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:55] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:55] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:20:55] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:56] [INFO ] [Audio] 读取事件: type=5, code=2, value=1
+[2026-01-19 14:20:56] [INFO ] [Audio] 检测到音频输入设备插入
+[2026-01-19 14:20:56] [INFO ] [Audio] Generating and playing a tone...
+[2026-01-19 14:20:56] [INFO ] [Audio] Playing audio on device: plughw:rockchipes8389
+[2026-01-19 14:20:56] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:57] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:20:58] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:20:59] [INFO ] [Audio] Playback finished.
+[2026-01-19 14:20:59] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:20:59] [INFO ] [LED] RLED set to OFF
+[解析成功
+2026-01-19 14:21:00] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 2,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"type" : "camera"
+		},
+		"testFuncCode" : 21,
+		"type" : "camera"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:00] [INFO ] [ProtocolParser] cmdIndex : 40
+[2026-01-19 14:21:00] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:21:00] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:00] [INFO ] [ProtocolParser] response cmdIndex : 40, data length : 97
+[2026-01-19 14:21:00] [INFO ] [TaskHandler] execute camera test
+[2026-01-19 14:21:00] [INFO ] [Camera] 开始从设备 /dev/video55 捕获PNG图像到 /root/cam2_test.png
+[2026-01-19 14:21:00] [INFO ] [Camera] 设备驱动: rkisp_v6
+[2026-01-19 14:21:00] [INFO ] [Camera] 设备卡: rkisp_mainpath
+[2026-01-19 14:21:00] [INFO ] [Camera] 设备总线信息: platform:rkisp0-vir0
+[2026-01-19 14:21:00] [INFO ] [Camera] 设置格式成功: 1920x1080, 像素格式: 0x59565955
+[2026-01-19 14:21:00] [INFO ] [Camera] 分配了 1 个缓冲区
+[2026-01-19 14:21:00] [INFO ] [Camera] 缓冲区[0]: 长度=4177920, 偏移=0
+[2026-01-19 14:21:00] [INFO ] [Camera] 开始视频流捕获
+[2026-01-19 14:21:00] [INFO ] [Camera] 捕获到帧, 大小: 4147200 字节
+[2026-01-19 14:21:00] [INFO ] [Camera] 执行转换命令: ffmpeg -y -f rawvideo -pixel_format uyvy422 -video_size 1920x1080 -i - -frames 1 /root/cam2_test.png
+[2026-01-19 14:21:00] [INFO ] [LED] RLED set to ON
+ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 829440 kb/s
+    Stream #0:0: Video: rawvideo (UYVY / 0x59565955), uyvy422, 1920x1080, 829440 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> png (native))
+Output #0, image2, to '/root/cam2_test.png':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: png, rgb24, 1920x1080, q=2-31, 200 kb/s, 25 fps, 25 tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 png
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.0461x    
+video:1097kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[2026-01-19 14:21:01] [INFO ] [Camera] 帧已保存到 /root/cam2_test.png
+[2026-01-19 14:21:01] [INFO ] [Camera] 停止视频流捕获
+[2026-01-19 14:21:01] [INFO ] [Camera] 释放所有缓冲区
+[2026-01-19 14:21:01] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:01] [INFO ] [Camera] 成功捕获PNG图像到: /root/cam2_test.png
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 2,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"testResult" : "OK",
+			"testValue" : "0",
+			"type" : "camera"
+		},
+		"testFuncCode" : 21,
+		"testResult" : "OK",
+		"type" : "camera"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] send data length : 376
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+解析成功[
+2026-01-19 14:21:01] [INFO ] [ProtocolParser] cmdIndex : 24686
+[2026-01-19 14:21:01] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"groupData" : 
+			{
+				"boardName" : "ZY3588",
+				"testCase" : 
+				{
+					"enable" : true,
+					"groupList" : 
+					[
+						{
+							"enable" : true,
+							"itemList" : 
+							[
+								{
+									"enable" : true,
+									"linkTraining" : false,
+									"max" : 0.0,
+									"min" : 0.0,
+									"name" : "facilityusb4-1(2.0)",
+									"nodeInfo" : "512-4",
+									"pid" : "512",
+									"vid" : "4"
+								},
+								{
+									"enable" : true,
+									"linkTraining" : false,
+									"max" : 0.0,
+									"min" : 0.0,
+									"name" : "facilityusb4-2(3.0)",
+									"nodeInfo" : "768-4",
+									"pid" : "768",
+									"vid" : "4"
+								}
+							],
+							"name" : "up",
+							"type" : "positive"
+						},
+						{
+							"enable" : true,
+							"itemList" : 
+							[
+								{
+									"enable" : true,
+									"linkTraining" : false,
+									"max" : 0.0,
+									"min" : 0.0,
+									"name" : "facilityusb4-1(2.0)",
+									"nodeInfo" : "512-4",
+									"pid" : "512",
+									"vid" : "4"
+								},
+								{
+									"enable" : true,
+									"linkTraining" : false,
+									"max" : 0.0,
+									"min" : 0.0,
+									"name" : "facilityusb4-2(3.0)",
+									"nodeInfo" : "768-4",
+									"pid" : "768",
+									"vid" : "4"
+								}
+							],
+							"name" : "up",
+							"type" : "negative"
+						}
+					],
+					"isAutoTest" : true,
+					"priority" : "5",
+					"type" : "typec"
+				}
+			},
+			"type" : "typec"
+		},
+		"testFuncCode" : 22,
+		"type" : "typec"
+	},
+	"result" : false,
+	"subCommand" : 15
+}
+[解析成功
+2026-01-19 14:21:01] [INFO ] [ProtocolParser] cmdIndex : 41
+[2026-01-19 14:21:01] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED_COMBINE : 0x0F
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 15
+}
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] response cmdIndex : 41, data length : 98
+[2026-01-19 14:21:01] [INFO ] [TaskHandler] execute typec test
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 18,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 19,
+					"result" : false
+				}
+			],
+			"gpioId" : 100,
+			"gpioType" : 0,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] cmdIndex : 43
+解析成功
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:01] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] response cmdIndex : 43, data length : 98
+[2026-01-19 14:21:01] [INFO ] [TaskHandler] execute GPIO test
+[2026-01-19 14:21:01] [INFO ] [TaskHandlerGPIO] direction: 0
+[2026-01-19 14:21:01] [INFO ] [Gpio] gpio 83 already exported
+[2026-01-19 14:21:01] [INFO ] [Gpio] set gpio 83 value 0 success
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 18,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 19,
+					"result" : false,
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 100,
+			"gpioType" : 0,
+			"order" : 4
+		},
+		"testResult" : "OK"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] send data length : 392
+[2026-01-19 14:21:01] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:01] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 1: VID=0x0002, PID=0x0300
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 2: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 3: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 4: VID=0x0003, PID=0x0300
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 5: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 6: VID=0x0003, PID=0x0200
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 7: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 8: VID=0x0004, PID=0x0200
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 9: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 10: VID=0x0004, PID=0x0300
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 11: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 12: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 13: VID=0x0002, PID=0x0200
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 14: VID=0x0951, PID=0x1666
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 15: VID=0x0781, PID=0x5595
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 16: VID=0x1a40, PID=0x0101
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 17: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 18: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:21:01] [INFO ] [STORAGE] lsusb 设备 19: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[解析成功
+2026-01-19 14:21:01] [INFO ] [ProtocolParser] cmdIndex : 24687
+[2026-01-19 14:21:01] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 3,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"type" : "camera"
+		},
+		"testFuncCode" : 23,
+		"type" : "camera"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[解析成功
+2026-01-19 14:21:01] [INFO ] [ProtocolParser] cmdIndex : 42
+[2026-01-19 14:21:01] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:01] [INFO ] [ProtocolParser] response cmdIndex : 42, data length : 97
+[2026-01-19 14:21:01] [INFO ] [TaskHandler] execute camera test
+[2026-01-19 14:21:01] [INFO ] [Camera] 开始从设备 /dev/video64 捕获PNG图像到 /root/cam3_test.png
+[2026-01-19 14:21:01] [INFO ] [Camera] 设备驱动: rkisp_v6
+[2026-01-19 14:21:01] [INFO ] [Camera] 设备卡: rkisp_mainpath
+[2026-01-19 14:21:01] [INFO ] [Camera] 设备总线信息: platform:rkisp0-vir1
+[2026-01-19 14:21:01] [INFO ] [Camera] 设置格式成功: 1920x1080, 像素格式: 0x59565955
+[2026-01-19 14:21:01] [INFO ] [Camera] 分配了 1 个缓冲区
+[2026-01-19 14:21:01] [INFO ] [Camera] 缓冲区[0]: 长度=4177920, 偏移=0
+[2026-01-19 14:21:02] [INFO ] [Camera] 开始视频流捕获
+[解析成功
+2026-01-19 14:21:02] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 19,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 4,
+					"level" : 0,
+					"num" : 19,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 16,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 15,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 14,
+					"result" : false
+				}
+			],
+			"gpioId" : 100,
+			"gpioType" : 1,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] cmdIndex : 44
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:02] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] response cmdIndex : 44, data length : 98
+[2026-01-19 14:21:02] [INFO ] [TaskHandler] execute GPIO test
+[2026-01-19 14:21:02] [INFO ] [TaskHandlerGPIO] direction: 1
+[2026-01-19 14:21:02] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio147
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 147 already exported
+[2026-01-19 14:21:02] [INFO ] [Gpio] read gpio 147 value success, read buffer: 0
+
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 147 value 0 match success
+[2026-01-19 14:21:02] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio80
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 80 already exported
+[2026-01-19 14:21:02] [INFO ] [Gpio] read gpio 80 value success, read buffer: 0
+
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 80 value 0 match success
+[2026-01-19 14:21:02] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio79
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 79 already exported
+[2026-01-19 14:21:02] [INFO ] [Gpio] read gpio 79 value success, read buffer: 0
+
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 79 value 0 match success
+[2026-01-19 14:21:02] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio78
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 78 already exported
+[2026-01-19 14:21:02] [INFO ] [Gpio] read gpio 78 value success, read buffer: 0
+
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 78 value 0 match success
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 19,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 4,
+					"level" : 0,
+					"num" : 19,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 16,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 15,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 14,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 100,
+			"gpioType" : 1,
+			"order" : 4,
+			"type" : "1"
+		},
+		"testResult" : "OK",
+		"type" : "gpio"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] send data length : 855
+[2026-01-19 14:21:02] [INFO ] [Camera] 捕获到帧, 大小: 4147200 字节
+[2026-01-19 14:21:02] [INFO ] [Camera] 执行转换命令: ffmpeg -y -f rawvideo -pixel_format uyvy422 -video_size 1920x1080 -i - -frames 1 /root/cam3_test.png
+ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 829440 kb/s
+    Stream #0:0: Video: rawvideo (UYVY / 0x59565955), uyvy422, 1920x1080, 829440 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> png (native))
+[解析成功
+2026-01-19 14:21:02] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] cmdIndex : 24688
+[2026-01-19 14:21:02] [WARN ] [TaskHandler] unknown command: 0x0E
+Output #0, image2, to '/root/cam3_test.png':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: png, rgb24, 1920x1080, q=2-31, 200 kb/s, 25 fps, 25 tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 png
+[2026-01-19 14:21:02] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:21:02] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 20,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 19,
+					"result" : false
+				}
+			],
+			"gpioId" : 101,
+			"gpioType" : 0,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] cmdIndex : 45
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:02] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] response cmdIndex : 45, data length : 98
+[2026-01-19 14:21:02] [INFO ] [TaskHandler] execute GPIO test
+[2026-01-19 14:21:02] [INFO ] [TaskHandlerGPIO] direction: 0
+[2026-01-19 14:21:02] [INFO ] [Gpio] gpio 83 already exported
+[2026-01-19 14:21:02] [INFO ] [Gpio] set gpio 83 value 1 success
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 20,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 19,
+					"result" : false,
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 101,
+			"gpioType" : 0,
+			"order" : 4
+		},
+		"testResult" : "OK"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] send data length : 392
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.0979x    
+video:717kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[2026-01-19 14:21:02] [INFO ] [Camera] 帧已保存到 /root/cam3_test.png
+[2026-01-19 14:21:02] [INFO ] [Camera] 停止视频流捕获
+[2026-01-19 14:21:02] [INFO ] [Camera] 释放所有缓冲区
+[2026-01-19 14:21:02] [INFO ] [Camera] 成功捕获PNG图像到: /root/cam3_test.png
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 3,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"testResult" : "OK",
+			"testValue" : "0",
+			"type" : "camera"
+		},
+		"testFuncCode" : 23,
+		"testResult" : "OK",
+		"type" : "camera"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] send data length : 376
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[解析成功
+2026-01-19 14:21:02] [INFO ] [ProtocolParser] cmdIndex : 24689
+[2026-01-19 14:21:02] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:21:02] [INFO ] [ProtocolParser] cmdIndex : 24690
+解析成功
+[2026-01-19 14:21:02] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:21:03] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 21,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 4,
+					"level" : 1,
+					"num" : 19,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 16,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 15,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 14,
+					"result" : false
+				}
+			],
+			"gpioId" : 101,
+			"gpioType" : 1,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] cmdIndex : 46
+解析成功
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:03] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] response cmdIndex : 46, data length : 98
+[2026-01-19 14:21:03] [INFO ] [TaskHandler] execute GPIO test
+[2026-01-19 14:21:03] [INFO ] [TaskHandlerGPIO] direction: 1
+[2026-01-19 14:21:03] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio147
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 147 already exported
+[2026-01-19 14:21:03] [INFO ] [Gpio] read gpio 147 value success, read buffer: 1
+
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 147 value 1 match success
+[2026-01-19 14:21:03] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio80
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 80 already exported
+[2026-01-19 14:21:03] [INFO ] [Gpio] read gpio 80 value success, read buffer: 1
+
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 80 value 1 match success
+[2026-01-19 14:21:03] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio79
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 79 already exported
+[2026-01-19 14:21:03] [INFO ] [Gpio] read gpio 79 value success, read buffer: 1
+
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 79 value 1 match success
+[2026-01-19 14:21:03] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio78
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 78 already exported
+[2026-01-19 14:21:03] [INFO ] [Gpio] read gpio 78 value success, read buffer: 1
+
+[2026-01-19 14:21:03] [INFO ] [Gpio] gpio 78 value 1 match success
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 21,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 4,
+					"level" : 1,
+					"num" : 19,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 16,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 15,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 1,
+					"num" : 14,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 101,
+			"gpioType" : 1,
+			"order" : 4,
+			"type" : "1"
+		},
+		"testResult" : "OK",
+		"type" : "gpio"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] send data length : 855
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 1: VID=0x0002, PID=0x0300
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 2: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 3: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 4: VID=0x0003, PID=0x0300
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 5: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 6: VID=0x0003, PID=0x0200
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 7: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 8: VID=0x0004, PID=0x0200
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 9: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 10: VID=0x0004, PID=0x0300
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 11: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 12: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 13: VID=0x0002, PID=0x0200
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 14: VID=0x0951, PID=0x1666
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 15: VID=0x0781, PID=0x5595
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 16: VID=0x1a40, PID=0x0101
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 17: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 18: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:21:03] [INFO ] [STORAGE] lsusb 设备 19: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:03] [INFO ] [TaskHandler] type-c positive found matching 2.0 device: VID=0x4, PID=0x200
+[2026-01-19 14:21:03] [INFO ] [TaskHandler] type-c positive found matching 3.0 device: VID=0x4, PID=0x300
+[2026-01-19 14:21:03] [INFO ] [TaskHandler] type-c device first inserted reverse
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:21:03] [INFO ] [ProtocolParser] cmdIndex : 24691
+解析成功
+[2026-01-19 14:21:03] [WARN ] [TaskHandler] unknown command: 0x0E
+[解析成功
+2026-01-19 14:21:04] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 22,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 19,
+					"result" : false
+				}
+			],
+			"gpioId" : 102,
+			"gpioType" : 0,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] cmdIndex : 47
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:04] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] response cmdIndex : 47, data length : 98
+[2026-01-19 14:21:04] [INFO ] [TaskHandler] execute GPIO test
+[2026-01-19 14:21:04] [INFO ] [TaskHandlerGPIO] direction: 0
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 83 already exported
+[2026-01-19 14:21:04] [INFO ] [Gpio] set gpio 83 value 0 success
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 22,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 19,
+					"result" : false,
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 102,
+			"gpioType" : 0,
+			"order" : 4
+		},
+		"testResult" : "OK"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] send data length : 392
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+解析成功
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] cmdIndex : 24692
+[2026-01-19 14:21:04] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:21:04] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:04] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:04] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 23,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 4,
+					"level" : 0,
+					"num" : 19,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 16,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 15,
+					"result" : false
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 14,
+					"result" : false
+				}
+			],
+			"gpioId" : 102,
+			"gpioType" : 1,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] cmdIndex : 48
+解析成功
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:04] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] response cmdIndex : 48, data length : 98
+[[2026-01-19 14:21:04] [INFO ] [TaskHandler] execute GPIO test
+2026-01-19 14:21:04] [INFO ] [TaskHandlerGPIO] direction: 1
+[2026-01-19 14:21:04] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio147
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 147 already exported
+[2026-01-19 14:21:04] [INFO ] [Gpio] read gpio 147 value success, read buffer: 0
+
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 147 value 0 match success
+[2026-01-19 14:21:04] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio80
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 80 already exported
+[2026-01-19 14:21:04] [INFO ] [Gpio] read gpio 80 value success, read buffer: 0
+
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 80 value 0 match success
+[2026-01-19 14:21:04] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio79
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 79 already exported
+[2026-01-19 14:21:04] [INFO ] [Gpio] read gpio 79 value success, read buffer: 0
+
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 79 value 0 match success
+[2026-01-19 14:21:04] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio78
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 78 already exported
+[2026-01-19 14:21:04] [INFO ] [Gpio] read gpio 78 value success, read buffer: 0
+
+[2026-01-19 14:21:04] [INFO ] [Gpio] gpio 78 value 0 match success
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 23,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 4,
+					"level" : 0,
+					"num" : 19,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 16,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 15,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				},
+				{
+					"group" : 2,
+					"level" : 0,
+					"num" : 14,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 102,
+			"gpioType" : 1,
+			"order" : 4,
+			"type" : "1"
+		},
+		"testResult" : "OK",
+		"type" : "gpio"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] send data length : 855
+[2026-01-19 14:21:04] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:04] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:04] [解析成功INFO 
+] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:21:04] [INFO ] [ProtocolParser] cmdIndex : 24693
+[2026-01-19 14:21:04] [WARN ] [TaskHandler] unknown command: 0x0E
+[解析成功
+2026-01-19 14:21:05] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 24,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 0,
+					"level" : 0,
+					"num" : 18,
+					"result" : false
+				}
+			],
+			"gpioId" : 103,
+			"gpioType" : 0,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] cmdIndex : 49
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:05] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] response cmdIndex : 49, data length : 98
+[2026-01-19 14:21:05] [INFO ] [TaskHandler] execute GPIO test
+[2026-01-19 14:21:05] [INFO ] [TaskHandlerGPIO] direction: 0
+[2026-01-19 14:21:05] [INFO ] [Gpio] gpio 18 already exported
+[2026-01-19 14:21:05] [INFO ] [Gpio] set gpio 18 value 0 success
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 24,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 0,
+					"level" : 0,
+					"num" : 18,
+					"result" : false,
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 103,
+			"gpioType" : 0,
+			"order" : 4
+		},
+		"testResult" : "OK"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] send data length : 392
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+解析成功[
+2026-01-19 14:21:05] [INFO ] [ProtocolParser] cmdIndex : 24694
+[2026-01-19 14:21:05] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:21:05] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 25,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 1,
+					"level" : 0,
+					"num" : 20,
+					"result" : false
+				}
+			],
+			"gpioId" : 103,
+			"gpioType" : 1,
+			"order" : 4
+		}
+	},
+	"result" : false,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] cmdIndex : 50
+解析成功
+CMD_SIGNAL_EXEC
+[2026-01-19 14:21:05] [INFO ] [TaskHandler] CMD_SIGNAL_EXEC : 0x0D
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 13
+}
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] response cmdIndex : 50, data length : 98
+[2026-01-19 14:21:05] [INFO ] [TaskHandler] execute GPIO test
+[2026-01-19 14:21:05] [INFO ] [TaskHandlerGPIO] direction: 1
+[2026-01-19 14:21:05] [INFO ] [Gpio] GPIO_PATH: /sys/class/gpio/gpio52
+[2026-01-19 14:21:05] [INFO ] [Gpio] gpio 52 already exported
+[2026-01-19 14:21:05] [INFO ] [Gpio] read gpio 52 value success, read buffer: 0
+
+[2026-01-19 14:21:05] [INFO ] [Gpio] gpio 52 value 0 match success
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"order" : 4,
+		"testFuncCode" : 25,
+		"testOrder" : 
+		{
+			"beanList" : 
+			[
+				{
+					"group" : 1,
+					"level" : 0,
+					"num" : 20,
+					"result" : "true",
+					"testResult" : "OK",
+					"testValue" : "true"
+				}
+			],
+			"gpioId" : 103,
+			"gpioType" : 1,
+			"order" : 4,
+			"type" : "1"
+		},
+		"testResult" : "OK",
+		"type" : "gpio"
+	},
+	"result" : "true",
+	"subCommand" : 14
+}
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] send data length : 429
+[2026-01-19 14:21:05] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:05] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 14
+}
+[2026-01-19 14:21:05] [INFO ] [ProtocolParser] cmdIndex : 24695
+解析成功
+[2026-01-19 14:21:05] [WARN ] [TaskHandler] unknown command: 0x0E
+[2026-01-19 14:21:06] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:06] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:06] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:07] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:07] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:07] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:08] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:08] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:08] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:09] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:09] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:09] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:09] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:09] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:10] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:10] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:10] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:11] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:11] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:11] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:12] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:12] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:12] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:13] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:13] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:13] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:14] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:14] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:14] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:14] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:14] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:15] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:15] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:15] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:16] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:16] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:16] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:17] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:17] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:17] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:18] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:18] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: reverse
+
+[2026-01-19 14:21:18] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 反插
+[2026-01-19 14:21:19] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:19] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:19] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:19] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: unknown
+
+[2026-01-19 14:21:19] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 未插入或异常
+[2026-01-19 14:21:20] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:20] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: unknown
+
+[2026-01-19 14:21:20] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 未插入或异常
+[2026-01-19 14:21:21] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:21] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: unknown
+
+[2026-01-19 14:21:21] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 未插入或异常
+[2026-01-19 14:21:22] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:22] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 读取值: normal
+
+[2026-01-19 14:21:22] [INFO ] [TYPEC] Type-C设备 /sys/class/typec/port0/orientation 正插
+[2026-01-19 14:21:23] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:24] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:24] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:24] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 1: VID=0x0002, PID=0x0300
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 2: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 3: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 4: VID=0x0003, PID=0x0300
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 5: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 6: VID=0x0003, PID=0x0200
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 7: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 8: VID=0x0004, PID=0x0200
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 9: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 10: VID=0x0004, PID=0x0300
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 11: VID=0x1d6b, PID=0x0003
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 12: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 13: VID=0x0002, PID=0x0200
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 14: VID=0x0951, PID=0x1666
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 15: VID=0x0781, PID=0x5595
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 16: VID=0x1a40, PID=0x0101
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 17: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 18: VID=0x1d6b, PID=0x0001
+[2026-01-19 14:21:24] [INFO ] [STORAGE] lsusb 设备 19: VID=0x1d6b, PID=0x0002
+[2026-01-19 14:21:24] [INFO ] [TaskHandler] type-c negative found matching 2.0 device: VID=0x4, PID=0x200
+[2026-01-19 14:21:24] [INFO ] [TaskHandler] type-c negative found matching 3.0 device: VID=0x4, PID=0x300
+[2026-01-19 14:21:24] [INFO ] [TaskHandler] type-c device second inserted normal
+[2026-01-19 14:21:25] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:25] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"groupList" : 
+			[
+				{
+					"enable" : true,
+					"itemList" : 
+					[
+						{
+							"enable" : true,
+							"linkTraining" : false,
+							"max" : 0.0,
+							"min" : 0.0,
+							"name" : "facilityusb4-1(2.0)",
+							"nodeInfo" : "512-4",
+							"pid" : "512",
+							"testResult" : "OK",
+							"testValue" : "512-4",
+							"vid" : "4"
+						},
+						{
+							"enable" : true,
+							"linkTraining" : false,
+							"max" : 0.0,
+							"min" : 0.0,
+							"name" : "facilityusb4-2(3.0)",
+							"nodeInfo" : "768-4",
+							"pid" : "768",
+							"testResult" : "OK",
+							"testValue" : "768-4",
+							"vid" : "4"
+						}
+					],
+					"name" : "up",
+					"type" : "positive"
+				},
+				{
+					"enable" : true,
+					"itemList" : 
+					[
+						{
+							"enable" : true,
+							"linkTraining" : false,
+							"max" : 0.0,
+							"min" : 0.0,
+							"name" : "facilityusb4-1(2.0)",
+							"nodeInfo" : "512-4",
+							"pid" : "512",
+							"testResult" : "OK",
+							"testValue" : "512-4",
+							"vid" : "4"
+						},
+						{
+							"enable" : true,
+							"linkTraining" : false,
+							"max" : 0.0,
+							"min" : 0.0,
+							"name" : "facilityusb4-2(3.0)",
+							"nodeInfo" : "768-4",
+							"pid" : "768",
+							"testResult" : "OK",
+							"testValue" : "768-4",
+							"vid" : "4"
+						}
+					],
+					"name" : "up",
+					"type" : "negative"
+				}
+			],
+			"isAutoTest" : true,
+			"priority" : "5",
+			"testResult" : "OK",
+			"type" : "typec"
+		},
+		"testFuncCode" : 22,
+		"type" : "typec"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:21:25] [INFO ] [ProtocolParser] send data length : 1630
+[解析成功
+2026-01-19 14:21:25] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:21:25] [INFO ] [ProtocolParser] cmdIndex : 24696
+[2026-01-19 14:21:25] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:21:26] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:21:26] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"btnTestComplete" : 
+			{
+				"enable" : false
+			},
+			"btnTestNot" : 
+			{
+				"enable" : false
+			},
+			"btnTestReset" : 
+			{
+				"enable" : false
+			},
+			"commId" : "3.1",
+			"enable" : true,
+			"firmwareVersion" : 
+			{
+				"enable" : true,
+				"version" : "TEST_CM3588S2_RK3588S2_Ubuntu20.04_20251013.101722"
+			},
+			"hwid" : 
+			{
+				"enable" : true,
+				"hwid" : "v3"
+			},
+			"isAutoTest" : true,
+			"ln" : 
+			{
+				"enable" : true,
+				"length" : 21
+			},
+			"priority" : "1",
+			"testAllResult" : 
+			{
+				"enable" : false
+			},
+			"testAppVersion" : 
+			{
+				"enable" : true,
+				"version" : "CMBOARD_TESTAPP_V20251011_221400"
+			},
+			"testBoard" : 
+			{
+				"baud" : "115200",
+				"enable" : true,
+				"model" : "ZY3588",
+				"type" : "0"
+			},
+			"type" : "base"
+		},
+		"testFuncCode" : 24,
+		"type" : "base"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:26] [INFO ] [ProtocolParser] cmdIndex : 51
+[2026-01-19 14:21:26] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:21:26] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:26] [INFO ] [ProtocolParser] response cmdIndex : 51, data length : 97
+[2026-01-19 14:21:26] [INFO ] [TaskHandler] execute base info test
+[2026-01-19 14:21:26] [INFO ] [BASEINFO] read hwid: v3
+vendor read:
+51 45 52 56
+20 00 15 00
+33 31 33 35
+36 38 31 37
+53 46 32 34
+30 33 31 35
+30 30 33 38
+[2026-01-19 14:21:26] [INFO ] [TaskHandler] read ln : 31356817SF24031500381
+[2026-01-19 14:21:26] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"btnTestComplete" : 
+			{
+				"enable" : false
+			},
+			"btnTestNot" : 
+			{
+				"enable" : false
+			},
+			"btnTestReset" : 
+			{
+				"enable" : false
+			},
+			"commId" : "3.1",
+			"enable" : true,
+			"firmwareVersion" : 
+			{
+				"enable" : true,
+				"testValue" : "ZY3588_RK3588_ubuntu20.04_20260117.201958",
+				"version" : "TEST_CM3588S2_RK3588S2_Ubuntu20.04_20251013.101722"
+			},
+			"hwid" : 
+			{
+				"enable" : true,
+				"hwid" : "v3",
+				"testValue" : "v3"
+			},
+			"isAutoTest" : true,
+			"ln" : 
+			{
+				"enable" : true,
+				"length" : 21,
+				"testValue" : "31356817SF24031500381"
+			},
+			"mac" : 
+			{
+				"enable" : null
+			},
+			"priority" : "1",
+			"testAllResult" : 
+			{
+				"enable" : false
+			},
+			"testAppVersion" : 
+			{
+				"enable" : true,
+				"testValue" : "CMBOARD_TESTAPP_ZY3588_V20251216_103800",
+				"version" : "CMBOARD_TESTAPP_V20251011_221400"
+			},
+			"testBoard" : 
+			{
+				"baud" : "115200",
+				"enable" : true,
+				"model" : "ZY3588",
+				"type" : "0"
+			},
+			"type" : "base"
+		},
+		"testFuncCode" : 24,
+		"type" : "base"
+	},
+	"subCommand" : 7
+}
+[2026-01-19 14:21:26] [INFO ] [ProtocolParser] send data length : 1152
+[解析成功
+2026-01-19 14:21:27] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] cmdIndex : 24697
+[2026-01-19 14:21:27] [WARN ] [TaskHandler] unknown command: 0x07
+解析成功
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 4,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"type" : "camera"
+		},
+		"testFuncCode" : 25,
+		"type" : "camera"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] cmdIndex : 52
+[2026-01-19 14:21:27] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] response cmdIndex : 52, data length : 97
+[2026-01-19 14:21:27] [INFO ] [TaskHandler] execute camera test
+[2026-01-19 14:21:27] [INFO ] [Camera] 开始从设备 /dev/video91 捕获PNG图像到 /root/cam4_test.png
+[2026-01-19 14:21:27] [INFO ] [Camera] 设备驱动: rkisp_v6
+[2026-01-19 14:21:27] [INFO ] [Camera] 设备卡: rkisp_mainpath
+[2026-01-19 14:21:27] [INFO ] [Camera] 设备总线信息: platform:rkisp1-vir2
+[2026-01-19 14:21:27] [INFO ] [Camera] 设置格式成功: 1920x1080, 像素格式: 0x59565955
+[2026-01-19 14:21:27] [INFO ] [Camera] 分配了 1 个缓冲区
+[2026-01-19 14:21:27] [INFO ] [Camera] 缓冲区[0]: 长度=4177920, 偏移=0
+[2026-01-19 14:21:27] [INFO ] [Camera] 开始视频流捕获
+[2026-01-19 14:21:27] [INFO ] [Camera] 捕获到帧, 大小: 4147200 字节
+[2026-01-19 14:21:27] [INFO ] [Camera] 执行转换命令: ffmpeg -y -f rawvideo -pixel_format uyvy422 -video_size 1920x1080 -i - -frames 1 /root/cam4_test.png
+解析成功
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"groupList" : 
+			[
+				{
+					"enable" : false,
+					"itemList" : 
+					[
+						{
+							"dataLength" : 48,
+							"enable" : true,
+							"mode" : "0",
+							"procedure" : 
+							{
+								"enable" : true,
+								"stepList" : 
+								[
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "delay",
+										"time" : 100,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 1024,
+										"name" : "send",
+										"time" : 0,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "receiver",
+										"time" : 0,
+										"timeout" : 2000
+									}
+								],
+								"wiegandMode" : 26
+							},
+							"serialName" : "RS232(1)",
+							"serialPath" : "/dev/ttyS9",
+							"type" : "ttl"
+						}
+					]
+				},
+				{
+					"enable" : false,
+					"itemList" : 
+					[
+						{
+							"dataLength" : 48,
+							"enable" : true,
+							"mode" : "0",
+							"procedure" : 
+							{
+								"enable" : true,
+								"stepList" : 
+								[
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "delay",
+										"time" : 100,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 1024,
+										"name" : "send",
+										"time" : 0,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "receiver",
+										"time" : 0,
+										"timeout" : 2000
+									}
+								],
+								"wiegandMode" : 26
+							},
+							"serialName" : "RS485(1)",
+							"serialPath" : "/dev/ttyS4",
+							"type" : "ttl"
+						},
+						{
+							"dataLength" : 48,
+							"enable" : true,
+							"mode" : "0",
+							"procedure" : 
+							{
+								"enable" : true,
+								"stepList" : 
+								[
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "delay",
+										"time" : 100,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 1024,
+										"name" : "send",
+										"time" : 0,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "receiver",
+										"time" : 0,
+										"timeout" : 2000
+									}
+								],
+								"wiegandMode" : 26
+							},
+							"serialName" : "RS485(2)",
+							"serialPath" : "/dev/ttyS7",
+							"type" : "ttl"
+						}
+					]
+				}
+			],
+			"isAutoTest" : true,
+			"priority" : "1",
+			"type" : "serial"
+		},
+		"testFuncCode" : 26,
+		"type" : "serial"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] cmdIndex : 53
+[2026-01-19 14:21:27] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] response cmdIndex : 53, data length : 97
+[2026-01-19 14:21:27] [INFO ] [TaskHandler] execute serial test
+[2026-01-19 14:21:27] [INFO ] [LED] RLED set to OFF
+ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 829440 kb/s
+    Stream #0:0: Video: rawvideo (UYVY / 0x59565955), uyvy422, 1920x1080, 829440 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> png (native))
+[2026-01-19 14:21:27] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:27] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+Output #0, image2, to '/root/cam4_test.png':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: png, rgb24, 1920x1080, q=2-31, 200 kb/s, 25 fps, 25 tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 png
+[2026-01-19 14:21:27] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:27] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:27] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:27] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.0768x    
+video:1958kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[2026-01-19 14:21:27] [INFO ] [Camera] 帧已保存到 /root/cam4_test.png
+[2026-01-19 14:21:27] [INFO ] [Camera] 停止视频流捕获
+[2026-01-19 14:21:27] [INFO ] [Camera] 释放所有缓冲区
+[2026-01-19 14:21:27] [INFO ] [Camera] 成功捕获PNG图像到: /root/cam4_test.png
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 4,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"testResult" : "OK",
+			"testValue" : "0",
+			"type" : "camera"
+		},
+		"testFuncCode" : 25,
+		"testResult" : "OK",
+		"type" : "camera"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:21:27] [INFO ] [ProtocolParser] send data length : 376
+[2026-01-19 14:21:28] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:21:28] [INFO ] [ProtocolParser] cmdIndex : 24698
+解析成功
+[2026-01-19 14:21:28] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read : 1234567890!@#$%^&*()
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] serial test success on attempt 1
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] test ok : 1
+[2026-01-19 14:21:28] [INFO ] [TaskHandler] collect 485 /dev/ttyS4 mode 0
+[2026-01-19 14:21:28] [INFO ] [TaskHandler] collect 485 /dev/ttyS7 mode 0
+Device /dev/ttyS4[: Send Result = Success, Recv Result = Success
+Device /dev/ttyS7: Send Result = Success2026-01-19 14:21:28] [INFO ] [, Recv Result = SERIALSuccess] test results reset: all send success, all recv success(default)
+
+Device /dev/ttyS4 sent data to Device /dev/ttyS7
+[2026-01-19 14:21:28] [INFO ] [LED] RLED set to ON
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:28] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+[2026-01-19 14:21:29] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:29] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS7: 1234567890!@#$%^&*()
+Device /dev/ttyS7 sent data to Device /dev/ttyS4
+[2026-01-19 14:21:29] [INFO ] [LED] RLED set to OFF
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:29] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:30] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:30] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:30] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+bytesRead = 1234567890!@#$%^&*()  readCount = 20
+[2026-01-19 14:21:30] [DEBUG] [SERIAL] read from /dev/ttyS4: 1234567890!@#$%^&*()
+本次测试结果：
+Device /dev/ttyS4: Send Result = Success, Recv Result = Success
+Device /dev/ttyS7: Send Result = Success, Recv Result = Success
+[2026-01-19 14:21:30] [DEBUG] [SERIAL] serial 485 test success on attempt 1
+[[2026-01-19 14:21:30] [INFO ] [TaskHandler] 485 device: /dev/ttyS4, send: success, recv: success
+[2026-01-19 14:21:30] [INFO ] [TaskHandler] 485 device: /dev/ttyS7, send: success, recv: success
+2026-01-19 14:21:30] [ERROR] [SERIAL] deviceList size < 2
+[2026-01-19 14:21:30] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"enable" : true,
+			"groupList" : 
+			[
+				{
+					"enable" : false,
+					"itemList" : 
+					[
+						{
+							"dataLength" : 48,
+							"enable" : true,
+							"mode" : "0",
+							"procedure" : 
+							{
+								"enable" : true,
+								"stepList" : 
+								[
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "delay",
+										"time" : 100,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 1024,
+										"name" : "send",
+										"time" : 0,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "receiver",
+										"time" : 0,
+										"timeout" : 2000
+									}
+								],
+								"wiegandMode" : 26
+							},
+							"serialName" : "RS232(1)",
+							"serialPath" : "/dev/ttyS9",
+							"testResult" : "OK",
+							"type" : "ttl"
+						}
+					]
+				},
+				{
+					"enable" : false,
+					"itemList" : 
+					[
+						{
+							"dataLength" : 48,
+							"enable" : true,
+							"mode" : "0",
+							"procedure" : 
+							{
+								"enable" : true,
+								"stepList" : 
+								[
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "delay",
+										"time" : 100,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 1024,
+										"name" : "send",
+										"time" : 0,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "receiver",
+										"time" : 0,
+										"timeout" : 2000
+									}
+								],
+								"wiegandMode" : 26
+							},
+							"serialName" : "RS485(1)",
+							"serialPath" : "/dev/ttyS4",
+							"testResult" : "OK",
+							"type" : "ttl"
+						},
+						{
+							"dataLength" : 48,
+							"enable" : true,
+							"mode" : "0",
+							"procedure" : 
+							{
+								"enable" : true,
+								"stepList" : 
+								[
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "delay",
+										"time" : 100,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 1024,
+										"name" : "send",
+										"time" : 0,
+										"timeout" : 0
+									},
+									{
+										"enable" : false,
+										"length" : 0,
+										"name" : "receiver",
+										"time" : 0,
+										"timeout" : 2000
+									}
+								],
+								"wiegandMode" : 26
+							},
+							"serialName" : "RS485(2)",
+							"serialPath" : "/dev/ttyS7",
+							"testResult" : "OK",
+							"type" : "ttl"
+						}
+					]
+				}
+			],
+			"isAutoTest" : true,
+			"priority" : "1",
+			"type" : "serial"
+		},
+		"testFuncCode" : 26,
+		"type" : "serial"
+	},
+	"subCommand" : 7
+}
+[2026-01-19 14:21:30] [INFO ] [ProtocolParser] send data length : 2782
+[2026-01-19 14:21:30] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:21:30] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:21:30] [INFO ] [ProtocolParser] cmdIndex : 24699
+[2026-01-19 14:21:30] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:21:30] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 5,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"type" : "camera"
+		},
+		"testFuncCode" : 27,
+		"type" : "camera"
+	},
+	"result" : false,
+	"subCommand" : 5
+}
+解析成功
+[2026-01-19 14:21:30] [INFO ] [ProtocolParser] cmdIndex : 54
+[2026-01-19 14:21:30] [INFO ] [TaskHandler] CMD_SIGNAL_TOBEMEASURED : 0x05
+[2026-01-19 14:21:30] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 5
+}
+[2026-01-19 14:21:30] [INFO ] [ProtocolParser] response cmdIndex : 54, data length : 97
+[2026-01-19 14:21:30] [INFO ] [TaskHandler] execute camera test
+[2026-01-19 14:21:30] [INFO ] [Camera] 开始从设备 /dev/video82 捕获PNG图像到 /root/cam5_test.png
+[2026-01-19 14:21:30] [INFO ] [Camera] 设备驱动: rkisp_v6
+[2026-01-19 14:21:30] [INFO ] [Camera] 设备卡: rkisp_mainpath
+[2026-01-19 14:21:30] [INFO ] [Camera] 设备总线信息: platform:rkisp1-vir1
+[2026-01-19 14:21:30] [INFO ] [Camera] 设置格式成功: 1920x1080, 像素格式: 0x59565955
+[2026-01-19 14:21:30] [INFO ] [Camera] 分配了 1 个缓冲区
+[2026-01-19 14:21:30] [INFO ] [Camera] 缓冲区[0]: 长度=4177920, 偏移=0
+[2026-01-19 14:21:30] [INFO ] [Camera] 开始视频流捕获
+[2026-01-19 14:21:30] [INFO ] [Camera] 捕获到帧, 大小: 4147200 字节
+[2026-01-19 14:21:30] [INFO ] [Camera] 执行转换命令: ffmpeg -y -f rawvideo -pixel_format uyvy422 -video_size 1920x1080 -i - -frames 1 /root/cam5_test.png
+ffmpeg version 4.2.7-0ubuntu0.1 Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.1 --toolchain=hardened --libdir=/usr/lib/aarch64-linux-gnu --incdir=/usr/include/aarch64-linux-gnu --arch=arm64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Input #0, rawvideo, from 'pipe:':
+  Duration: N/A, start: 0.000000, bitrate: 829440 kb/s
+    Stream #0:0: Video: rawvideo (UYVY / 0x59565955), uyvy422, 1920x1080, 829440 kb/s, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> png (native))
+Output #0, image2, to '/root/cam5_test.png':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0: Video: png, rgb24, 1920x1080, q=2-31, 200 kb/s, 25 fps, 25 tbn, 25 tbc
+    Metadata:
+      encoder         : Lavc58.54.100 png
+[2026-01-19 14:21:31] [INFO ] [LED] RLED set to OFF
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.0812x    
+video:1806kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[2026-01-19 14:21:31] [INFO ] [Camera] 帧已保存到 /root/cam5_test.png
+[2026-01-19 14:21:31] [INFO ] [Camera] 停止视频流捕获
+[2026-01-19 14:21:31] [INFO ] [Camera] 释放所有缓冲区
+[2026-01-19 14:21:31] [INFO ] [Camera] 成功捕获PNG图像到: /root/cam5_test.png
+[2026-01-19 14:21:31] [INFO ] [ProtocolParser] test result: {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"testCase" : 
+		{
+			"cameraId" : 5,
+			"enable" : true,
+			"format" : "RGGB",
+			"isAutoTest" : true,
+			"picMode" : 0,
+			"resolution" : "1920x1080",
+			"testResult" : "OK",
+			"testValue" : "0",
+			"type" : "camera"
+		},
+		"testFuncCode" : 27,
+		"testResult" : "OK",
+		"type" : "camera"
+	},
+	"result" : "true",
+	"subCommand" : 7
+}
+[2026-01-19 14:21:31] [INFO ] [ProtocolParser] send data length : 376
+[2026-01-19 14:21:31] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 2,
+	"data" : 
+	{
+		"test" : "1"
+	},
+	"result" : true,
+	"subCommand" : 7
+}
+[2026-01-19 14:21:31] [INFO ] [ProtocolParser] cmdIndex : 24700
+解析成功
+[2026-01-19 14:21:31] [WARN ] [TaskHandler] unknown command: 0x07
+[2026-01-19 14:21:32] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:33] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:34] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:34] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:34] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:35] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:36] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:37] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:38] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:39] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:39] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:39] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:40] [INFO ] [LED] RLED set to ON
+[解析成功
+2026-01-19 14:21:41] [INFO ] [ProtocolParser] recv : {
+	"cmdType" : 1,
+	"data" : 
+	{
+		"test" : 1
+	},
+	"result" : false,
+	"subCommand" : 3
+}
+[2026-01-19 14:21:41] [INFO ] [ProtocolParser] cmdIndex : 55
+[2026-01-19 14:21:41] [INFO ] [TaskHandler] CMD_OVER_TEST : 0x03
+[2026-01-19 14:21:41] [INFO ] [TaskHandler] Stopping all ongoing test tasks...
+[2026-01-19 14:21:41] [INFO ] [ProtocolParser] response data: {
+	"cmdType" : 2,
+	"data" : null,
+	"desc" : "xxx",
+	"result" : true,
+	"subCommand" : 3
+}
+[2026-01-19 14:21:41] [INFO ] [ProtocolParser] response cmdIndex : 55, data length : 97
+[2026-01-19 14:21:41] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:42] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:43] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:44] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:44] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:44] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:45] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:46] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:47] [INFO ] [LED] RLED set to OFF
+[2026-01-19 14:21:48] [INFO ] [LED] RLED set to ON
+[2026-01-19 14:21:49] [WARN ] [Audio] select超时,无事件发生
+[2026-01-19 14:21:49] [INFO ] [Audio] 等待音频设备插入事件， 超时时间: 5秒
+[2026-01-19 14:21:49] [INFO ] [LED] RLED set to OFF

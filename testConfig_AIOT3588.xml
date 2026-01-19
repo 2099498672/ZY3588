@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testData version="1.0" meta = "">
+    <!-- 工厂信息 -->
+    <factoryInfo>
+        <!-- 生产厂商  SF：圣佛  JY：金运  TM：天敏-->
+        <factory enable = "true" info = "NJ"/>
+        <!-- 测试平台  -->
+        <platform enable="true" info ="JS3588S"/>
+        <!-- 生产批次号，由公司ERP提供  -->
+        <batch enable = "true" info = "230131" />
+        <!-- 测试人员，info里面是测试人员姓名，最长4位 -->
+        <worker enable = "true" info = "ZLT"/>
+        <!-- 委外订单号，由公司ERP提供  -->
+        <order enable = "true" info = "WW202301030001" />
+        <!-- isUpLoad:是否上传日志，url:上传日志的网址  -->
+        <upload isUpload = "true" url = "http://192.168.70.103:8088/"/>
+        <!-- 吞吐量服务器配置，默认和日志上传服务器一致  -->
+        <throughput enable = "true" ip = "192.168.70.103" uploadPort = "14701" downloadPort = "14702"/>
+    </factoryInfo>
+    <!-- 主控板卡信息 type主板类型，main：主控板；test：待测主板 -->
+    <!-- workMode 本字段为待测主板生效，comm：与主控板通讯测试   self：直接自测 -->
+    <testPlatformInfo type = "main" workMode = "comm">
+        <!-- testapp 版本号，isShow代表是否检测 -->
+        <testAppVersion enable = "true">TestApp_v2.20251015.215234</testAppVersion>
+        <!-- isShow：是否检测；各项配置正确的版本号 -->
+        <firmwareVersion enable = "true">AIoT3588_RK3588_Android12_A_20250717.160634_VByOne</firmwareVersion>
+        <modelPlatform enable = "true" name="AIOT3588"></modelPlatform>
+        <testCaseMd5 enable = "false" password = "signway" value = "5fbc504ab35b8180d8264850c8ca325e"/>
+        <!-- 测试页面方向 orientation 0:0度  1:90度  8:180度  9:270度-->
+        <!-- 测试页面屏幕密度，文字大小修改 density 0.6 - 3.0-->
+        <screenOrientation enable = "true" orientation = "0" density="1.5"/>
+        <!-- 测试页面展示列数-->
+        <displaySpanCount value = "2"/>
+        <!-- 测试完毕按钮 -->
+        <btnTestComplete enable = "true" />
+        <!-- 开始测试按钮 -->
+        <btnTestStart enable = "true" />
+        <!-- 系统测试初始化按钮 -->
+        <btnTestInit enable = "true" />
+        <!-- 测试日志 -->
+        <testLogcat enable = "true" />
+        <sysRecovery enable = "false" />
+        <serialPartner enable = "true" />
+        <displayQRcode enable = "true" type="ln" lnLength="21" />
+
+        <!-- 外接板卡通讯信息 -->
+        <externalInfo>
+            <boardGroup enable = "true" type = "main" >
+                <!-- mcu母板 -->
+                <board id = "4" name = "mcu-main" enable = "true" version = "xxx">
+                    <comm id = "4.1" type = "usb-multi-serial" name = "ch348" number = "5" baud = "115200"></comm>
+                </board>
+                <!-- 测试电压MCU板 -->
+                <board id = "1" name = "mcu-voltage" enable = "true" version = "xxx">
+                    <!-- 通讯方式，子id是基于board id编写，唯一标记 -->
+                    <comm id = "1.2" type = "usb-multi-serial" name = "ch348" number = "2" baud = "115200"></comm>
+                </board>
+                <!-- 测试TypeC板 -->
+                <board id = "5" name = "mcu-typec" enable = "false" version = "xxx">
+                    <!-- 通讯方式，子id是基于board id编写，唯一标记 -->
+                    <comm id = "5.1" type = "usb-multi-serial" name = "ch348" number = "7" baud = "115200"></comm>
+                </board>
+                <!-- 待测主板 -->
+                <board id = "3" name = "test-board" enable = "true" version = "xxx">
+                    <!-- <comm id = "3.1" type = "serial" path = "/dev/ttyS4" baud = "115200"></comm> -->
+                    <comm baud="115200" id="3.1" path="/dev/ttyS7" type="serial" />
+                </board>
+            </boardGroup>
+            <boardGroup enable = "false" type = "test" >
+                <!-- 待测主板 -->
+                <board id = "4" name = "test-board" enable = "true" version = "xxx">
+                    <comm id = "4.1" type = "serial" path = "/dev/ttyS7" baud = "115200"></comm>
+                </board>
+            </boardGroup>
+        </externalInfo>
+        <commInfo enable = "true">
+            <chipInfo enable = "true" name = "ch348" pid = "21977" vid = "6790"></chipInfo>
+        </commInfo>
+        <!-- 测试平台本地网络配置信息，如果配置了，会先联网，同步时间，再进入测试页面 -->5
+        <networkInfo enable = "false">
+            <ethernet enable = "true"></ethernet>
+            <wifi enable = "true" ssid = "signway2.4g" password = "signway123"></wifi>
+            <throughputServer enable = "true" uploadPort = "14701" downloadPort = "14702"></throughputServer>
+        </networkInfo>
+    </testPlatformInfo>
+    <!-- 测试计划 包含testGroup 和 testCase，testGroup内的所有testCase项并行-->
+    <!-- 测试页 可多个，按照页顺序 进行测试，testMode：测试模式，0：全部正确，跳转至下一页  1：所有测试项测试过一次，跳转至下一页-->
+    <testPlan>
+        <testGroup enable = "true" type = "sn" testMode = "1" priority = "1">
+            <!-- 写入测试 writeType  0：默认写入，并校验  1：只写入   2：只校验  writeBtnEnable true：显示写入按钮 -->
+            <testCase type = "snMac" enable = "true" showType = "ln" isAutoTest = "true" priority = "1" logUploadType = "ln" serverVerifyType = "none">
+                <ln  enable="true" writeType = "0" writeBtnEnable = "false" length = "21" format = "0" nextFocusDelay = "0" />
+            </testCase>
+            <testCase type = "storage" enable = "true" isAutoTest = "true" priority = "1">
+                <!-- isShow：要不要测试。name：用于UI显示，以及日志生成。min:代表最小值。max:代表最大值。 -->
+                <store name = "ddr" enable = "true" min = "12" max = "16.0" />
+                <store name = "emmc" enable = "true"  min = "200" max = "256.0" />
+                <!-- name：存储设备的名称，用于UI显示；enable：是否测试；path：存储设备的绝对路径，如果不设置的话，默认使用相对路径；min:代表最小值；max:代表最大值； -->
+                <store name = "usb0" enable = "true" path="" min = "4.0" max = "64.0" />
+                <store name = "usb1" enable = "true" path="" min = "4.0" max = "64.0" />
+                <store name = "usb2" enable = "true" path="" min = "4.0" max = "64.0" />
+                <store name = "usb3" enable = "true" path="" min = "4.0" max = "64.0" />
+                <store name = "usb_pcie" enable = "true" path="" min = "4.0" max = "1000.0" />
+                <store name = "usb_tf" enable = "true" path="" min = "4.0" max = "64.0" />
+                <store name = "facilityusb2(3.0)" enable="true" isPid="768" isVid="2" />
+                <store name = "facilityusb2(2.0)" enable="true" isPid="512" isVid="2" />
+                <store name = "facilityusb3(2.0)" enable="true" isPid="768" isVid="3" />
+                <store name = "facilityusb3(2.0)" enable="true" isPid="512" isVid="3" />
+            </testCase>
+            <!-- 相机 -->
+            <testCase type = "camera" enable = "true" isAutoTest = "true" resolution="1920x1080" cameraId = "1"/>
+
+            <!-- 手动测试项 -->
+            <testCase type = "artificial" enable = "true" isAutoTest = "true" priority = "1" testMode="1">
+                <item enable="true" isAuto = "false" value = "" btnSwitch = "true">Green Led</item>
+                <item enable="true" isAuto = "false" value = "" btnSwitch = "true">Fan</item>
+                <item enable="true" isAuto = "false" value = "" btnSwitch = "false">HDMI OUT</item>
+                <item enable="true" isAuto = "false" value = "" btnSwitch = "false">MIPI OUT</item>
+                <item enable="true" isAuto = "false" value = "" btnSwitch = "false">EDP OUT</item>
+                <item enable="true" isAuto = "false" value = "" btnSwitch = "false">红灯闪烁</item>
+                <item enable="true" isAuto = "false" value = "" btnSwitch = "false">线性音频</item>
+                <item enable="false" isAuto = "false" value = "" btnSwitch = "false">PWR按键</item>
+            </testCase>
+
+            <!-- 按键测试 -->
+            <testCase type = "switchs" enable = "true" isAutoTest = "true" version = "2">
+                <item enable = "true" 	type = "VOL-_114"/>
+                <item enable = "true" 	type = "VOL+_115"/>
+                <item enable = "true" 	type = "MENU_139"/>
+                <item enable = "true" 	type = "ESC_158"/>
+                <item enable = "true" 	type = "OK_28"/>
+            </testCase>
+
+            <testCase type = "serial" enable = "true" isAutoTest = "true" priority = "1">
+                <!-- serialName：串口名，用于UI显示；isShow：是否测试；type；串口类型 custom/ttl/485/can；serialPath：串口地址 -->
+                <!-- mode：测试模式 0：自发自收； 1：与主板某个串口配合测试；2：与外接主板配合测试；partnerSerial：配合测试串口名【mode为1，生效】 -->
+                <itemGroup>
+                    <item serialName = "CAN0" enable = "true" type = "can" serialPath="can0" mode = "0" dataLength = "5" />
+                    <item serialName = "CAN1" enable = "true" type = "can" serialPath="can1"  mode = "0" dataLength = "5" />
+                    <item serialName = "CAN2" enable = "true" type = "can" serialPath="can2" mode = "2" dataLength = "5" />
+                </itemGroup>
+            </testCase>
+
+            <!-- wifi -->
+            <testCase type = "wifi" enable = "true" isAutoTest = "true" priority = "2">
+                <!-- signalMin：信号最小值；signalMax：信号最大值；检测到其中一个即通过 isShow是否显示连接按钮 -->
+                <ssid enable = "true" signalMin = "2" signalMax = "5" password = "signway123@">SIGNWAY-SC</ssid>
+            </testCase>
+            <testCase type = "bluetooth" enable = "true" isAutoTest = "true">
+                <rssi enable = "true" min = "-90" max = "0"/>
+            </testCase>
+
+            <testCase type = "net" enable = "true" isAutoTest = "true" testMode = "2" commId = "3.1" priority = "1">
+                <ip nic1 = "eth0">192.168.xx.xx</ip>
+                <ip2 nic2 = "eth1">192.168.xx.xx</ip2>
+            </testCase>
+        </testGroup>
+        <testGroup enable = "true" type = "cam2" testMode = "1" priority = "2">
+            <testCase type = "camera" enable = "true" isAutoTest = "true" resolution="1920x1080" cameraId = "2"/>
+        </testGroup>
+        <testGroup enable = "true" type = "gpio" testMode = "1" priority = "3">
+            <testCase type = "typec" enable = "true" isAutoTest = "true" priority = "5">
+                <!-- name：typeC接口类，分为up、 down-->
+                <!-- positive：Type-C正面，negative：反面；PD为PD电压，min、max为实际电压的误差范围 -->
+                <!-- USB为Type-C的USB2.0和USB3.0 -->
+                <!-- hdmi为HDMI测试，手动测试项 -->
+                <itemGroup name = "up" type = "positive" enable ="true">
+                    <item name = "facilityusb4-1(2.0)" enable="true"   path ="" pid = "512" vid = "4" nodeInfo = "512-4"/>
+                    <item name = "facilityusb4-2(3.0)" enable="true"   path ="" pid = "768" vid = "4" nodeInfo = "768-4"/>
+                </itemGroup>
+
+                <itemGroup name = "up" type = "negative"  enable ="true">
+                    <item name = "facilityusb4-1(2.0)" enable="true"   path ="" pid = "512" vid = "4" nodeInfo = "512-4"/>
+                    <item name = "facilityusb4-2(3.0)" enable="true"   path ="" pid = "768" vid = "4" nodeInfo = "768-4"/>
+                </itemGroup>
+            </testCase>
+
+            <testCase type = "gpio" enable = "true" isAutoTest = "true">
+                <item enable = "true" name = "I2S P2 P3 P4 P5 P6 LOW">
+                    <procedure enable = "true">
+                        <step name = "output" group = "2" num = "19" level = "0" />
+                        <step name = "delay" time = "500" />
+                        <step name="input" id = "AD-1" commId = "1.2">
+                            <pin group = "4" num = "19" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "16" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "15" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "14" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                        </step>
+                    </procedure>
+                </item>
+                <item enable = "true" name = "I2S P2 P3 P4 P5 P6 HIGH">
+                    <procedure enable = "true">
+                        <step name = "output" group = "2" num = "19" level = "1" />
+                        <step name = "delay" time = "1000" />
+                        <step name="input" id = "AD-1" commId = "1.2">
+                            <pin group = "4" num = "19" level = "1" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "16" level = "1" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "15" level = "1" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "14" level = "1" testValue = "" testResult = "" testDesc = ""/>
+                        </step>
+                    </procedure>
+                </item>
+                <item enable = "true" name = "I2S P2 P3 P4 P5 P6 LOW">
+                    <procedure enable = "true">
+                        <step name = "output" group = "2" num = "19" level = "0" />
+                        <step name = "delay" time = "500" />
+                        <step name="input" id = "AD-1" commId = "1.2">
+                            <pin group = "4" num = "19" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "16" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "15" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                            <pin group = "2" num = "14" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                        </step>
+                    </procedure>
+                </item>
+                <item enable = "true" name = "GPIO0_C2 GPIO1_C4 LOW">
+                    <procedure enable = "true">
+                        <step name = "output" group = "0" num = "18" level = "0" />
+                        <step name = "delay" time = "500" />
+                        <step name="input" id = "AD-1" commId = "1.2">
+                            <pin group = "1" num = "20" level = "0" testValue = "" testResult = "" testDesc = ""/>
+                        </step>
+                    </procedure>
+                </item>
+            </testCase>
+            <!-- 相机 -->
+            <testCase type = "camera" enable = "true" isAutoTest = "true" resolution="1920x1080" cameraId = "3"/>
+        </testGroup>
+
+        <testGroup enable = "true" type = "base" testMode = "1" priority = "3">
+            <!-- 待测主板信息 commId：数据来源方式，与externalInfo匹配，如匹配不成功，本机自身检测-->
+            <testCase type = "base" enable = "true" commId = "3.1" priority = "1" isAutoTest="true">
+                <firmwareVersion enable = "true">TEST_CM3588S2_RK3588S2_Ubuntu20.04_20251013.101722</firmwareVersion>
+                <!-- testapp 版本号，isShow代表是否检测 -->
+                <testAppVersion enable = "true" testValue = "" testResult = "" testDesc = "">CMBOARD_TESTAPP_V20251011_221400</testAppVersion>
+                <!-- isShow：是否检测；length：MAC号的长度 -->
+                <hwid enable = "true" testValue = "" testResult = "" testDesc = "">v3</hwid>
+                <!-- 待测主板信息 type：0：Android板  1：接口板[可通讯]  2：接口板[不能通讯]   model：主板型号 -->
+                <!-- 如是Android板，需匹对model值，不一致，测试失败 -->
+                <testBoard enable = "true" type = "0" model = "ZY3588" baud="115200" />
+                <ln enable = "true" length = "21"/>
+                <btnTestComplete enable = "false" />
+                <!-- 重置测试按钮 -->
+                <btnTestReset enable = "false" />
+                <!-- 不必测试按钮 -->
+                <btnTestNot enable = "false" />
+                <!-- 测试结果 -->
+                <testAllResult enable = "false"/>
+            </testCase>
+            <testCase type = "camera" enable = "true" isAutoTest = "true" resolution="1920x1080" cameraId = "4"/>
+
+            <testCase type = "serial" enable = "true" isAutoTest = "true" priority = "1">
+                <!-- serialName：串口名，用于UI显示；isShow：是否测试；type；串口类型 custom/ttl/485/can；serialPath：串口地址 -->
+                <!-- mode：测试模式 0：自发自收； 1：与主板某个串口配合测试；2：与外接主板配合测试；partnerSerial：配合测试串口名【mode为1，生效】 -->
+                <itemGroup>
+                    <item serialName = "RS232(1)" enable = "true" type = "ttl" serialPath="/dev/ttyS9" mode = "0" testValue = "" testResult = "" testDesc = "">
+                        <!-- 测试步骤 -->
+                        <procedure enable = "true">
+                            <step name = "delay" time = "100" />
+                            <step name = "send" length = "1024" action=""/>
+                            <step name = "receiver" timeout = "2000" />
+                        </procedure>
+                    </item>
+                </itemGroup>
+                <itemGroup>
+                    <item serialName = "RS485(1)" enable = "true" type = "ttl" serialPath="/dev/ttyS4" mode = "0" testValue = "" testResult = "" testDesc = "">
+                        <!-- 测试步骤 -->
+                        <procedure enable = "true">
+                            <step name = "delay" time = "100" />
+                            <step name = "send" length = "1024" action=""/>
+                            <step name = "receiver" timeout = "2000" />
+                        </procedure>
+                    </item>
+                    <item serialName = "RS485(2)" enable = "true" type = "ttl" serialPath="/dev/ttyS7" mode = "0" testValue = "" testResult = "" testDesc = "">
+                        <!-- 测试步骤 -->
+                        <procedure enable = "true">
+                            <step name = "delay" time = "100" />
+                            <step name = "send" length = "1024" action=""/>
+                            <step name = "receiver" timeout = "2000" />
+                        </procedure>
+                    </item>
+                </itemGroup>
+            </testCase>
+        </testGroup>
+
+        <testGroup enable = "true" type = "voltage" testMode = "1" priority = "4">
+            <testCase type = "camera" enable = "true" isAutoTest = "true" resolution="1920x1080" cameraId = "5"/>
+
+            <!-- 电压测试 -->
+            <testCase type = "voltage" enable = "true" isAutoTest = "true" priority = "2">
+                <!-- id：主板id+通道接口序号 count：连续测试次数  period：两次测试时间间隔，单位us   min：满足要求最小电压(V)  max：最大电压(V) -->
+                <!-- procedure type 0:待测板，gpio  1:接口板，   2:待测板，命令方式  3:接口板，命令方式 -->
+                <item  moduleName = "电源集1[TP8 - TP14 - TP18 - TP2 - TP10 - TP12 - TP17 - TP21]"  enable = "true"  id = "AD-1" >
+                    <procedure enable = "true" type = "0">
+                        <step name = "measure" id = "AD-1" commId = "1.2" count = "5" duration = "3" timeout = "2">
+                            <pin number = "17"  min = "1.14"  max = "1.26" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "18" 	min = "1.14"  max = "1.26" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "19" 	min = "1.14"  max = "1.26" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "25" 	min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "26" 	min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "27" 	min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "28" 	min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "29" 	min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                        </step>
+                    </procedure>
+                </item>
+                <item  moduleName = "电源集2[TP36 - TP90 - TP9 - TP16 - TP20 - TP43 - TP1 - TP85]"  enable = "true"  id = "AD-1" >
+                    <procedure enable = "true" type = "0">
+                        <step name = "measure" id = "AD-1" commId = "1.2" count = "5" duration = "3" timeout = "2">
+                            <pin number = "30" 	min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "31" 	min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "32" 	min = "2.66"  max = "2.94" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "33" 	min = "2.66"  max = "2.94" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "34" 	min = "2.66"  max = "2.94" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "35" 	min = "2.95"  max = "3.26" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "36" 	min = "3.14"  max = "3.47" testValue = "" testResult = "" testDesc = "" />
+                        </step>
+                    </procedure>
+                </item>
+                <item  moduleName = "电源集3[TP5 - TP35 - TP40 - TP88 - TP39 - TP91 - TP92 - TP86]"  enable = "true"  id = "AD-1" >
+                    <procedure enable = "true" type = "0">
+                        <step name = "measure" id = "AD-1" commId = "1.2" count = "5" duration = "3" timeout = "2">
+                            <pin number = "37" min = "3.14"  max = "3.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "38" min = "3.14"  max = "3.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "39" min = "3.14"  max = "3.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "40" min = "3.14"  max = "3.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "41" min = "3.20"  max = "3.54" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "42" min = "1.71"  max = "1.89" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "43" min = "3.20"  max = "3.54" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "44" min = "3.20"  max = "3.54" testValue = "" testResult = "" testDesc = "" />
+                        </step>
+                    </procedure>
+                </item>
+
+                <item  moduleName = "电源集4[TP29 - TP22 - TP23 - TP24 - TP25 - TP26 - TP28 - TP30]"  enable = "true"  id = "AD-1" >
+                    <procedure enable = "true" type = "0">
+                        <step name = "measure" id = "AD-1" commId = "1.2" count = "5" duration = "3" timeout = "2">
+                            <pin number = "45" min = "3.68"  max = "4.06" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "46" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "47" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "48" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "49" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "50" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "51" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "52" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                        </step>
+                    </procedure>
+                </item>
+
+                <item  moduleName = "电源集5[TP31 - TP41 - TP97 - TP48 - TP3 - TP54]"  enable = "true"  id = "AD-1" >
+                    <procedure enable = "true" type = "0">
+                        <step name = "measure" id = "AD-1" commId = "1.2" count = "5" duration = "3" timeout = "2">
+                            <pin number = "53" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "54" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "56" min = "4.95"  max = "5.47" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "57" min = "3.80"  max = "4.20" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "59" min = "9.00"  max = "10.5" testValue = "" testResult = "" testDesc = "" />
+                            <pin number = "61" min = "11.4"  max = "12.6" testValue = "" testResult = "" testDesc = "" />
+                        </step>
+                    </procedure>
+                </item>
+            </testCase>
+        </testGroup>
+
+    </testPlan>
+</testData>
